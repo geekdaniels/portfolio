@@ -1,13 +1,14 @@
 import React from "react"
 import Loadable from '@loadable/component'
 
-const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 import "owl.carousel/dist/assets/owl.carousel.css"
 import "owl.carousel/dist/assets/owl.theme.default.css"
 
 import Element_1 from "../../img/home1/photo-1534528741775-53994a69daeb.png"
 import Element_2 from "../../img/home1/photo-1545975645-ea9501a81d76.png"
+
+const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const Testimonial = () => (
   <>

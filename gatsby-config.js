@@ -1,3 +1,7 @@
+const website = require('./config/website')
+
+const pathPrefix = website.pathPrefix === '/' ? '' : website.pathPrefix
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,

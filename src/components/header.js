@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Logo from "../images/logo_white.svg"
+import Logo from "../images/logo.png"
 
 class Header extends React.Component {
   // const Header = ({ siteTitle }) => (
