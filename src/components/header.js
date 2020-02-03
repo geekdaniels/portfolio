@@ -1,32 +1,45 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Logo from "../images/logo_white.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header>
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-2 col-sm-4 col-5">
+          <div className="">
+            <Link to="/" className="link">
+              <img src={Logo} alt="" />
+            </Link>
+          </div>
+        </div>
+        <div className="col-lg-8 col-sm-4 col-7">
+          <div className="main-menu stellarnav">
+            <ul>
+              <li>
+                <Link to="/" activeClassName="active">Home</Link>
+              </li>
+              <li>
+                <Link to="/designs" activeClassName="active">Designs</Link>
+              </li>
+              <li>
+                <Link to="/blog" activeClassName="active">Blog</Link>
+              </li>
+              <li>
+                <Link to="/faq" activeClassName="active">FAQs</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="col-lg-2 col-sm-4 col-12 d-none d-sm-block">
+          <div className="lets-chat">
+            <Link to="/contact" className="link btn-style-1">
+              Contact Me
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 )
