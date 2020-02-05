@@ -149,7 +149,6 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
         <html lang={siteLanguage} />
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
-        <meta name="gatsby-starter" content="Gatsby Starter Prismic" /> 
         <meta name="keywords" content="Olufemi oladotun Daniel, UX Design, Olufemi oladotun, Olufemi Daniel, UI Design, web design lagos, UX design lagos,  UX Designer Nigeria, front-end developer, front-end designer, web designer, User Experience, UX designer, User Interface, UI designer, Mobile app Design, web design Nigeria, web design lagos, Nigeria web designer, website design nigeria, e-commerce website, website development in Nigeria" />
         {/* Insert schema.org data conditionally (webpage/article) + everytime (breadcrumbs) */}
         {!article && <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>}
@@ -160,7 +159,7 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
         desc={seo.description}
         image={seo.image}
         title={seo.title}
-        type='website'
+        type={article ? 'article' : 'website'}
         url={seo.url}
         locale={ogLanguage}
         name={facebook}

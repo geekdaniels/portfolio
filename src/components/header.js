@@ -1,10 +1,8 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import Logo from "../images/logo.png"
 
 class Header extends React.Component {
-  // const Header = ({ siteTitle }) => (
   state = {
     isTop: false,
   }
@@ -69,13 +67,5 @@ class Header extends React.Component {
     )
   }
 }
-
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
 
 export default Header
