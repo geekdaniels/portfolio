@@ -1,8 +1,8 @@
 import React from "react"
-import Element_1 from "../../img/home1/hero-element-1.png"
-import Element_2 from "../../img/home1/hero-element-2.png"
-import Element_3 from "../../img/home1/hero-element-3.png"
-import Element_4 from "../../img/home1/hero-element-4.png"
+import Element_1 from "../../images/home1/hero-element-1.png"
+import Element_2 from "../../images/home1/hero-element-2.png"
+import Element_3 from "../../images/home1/hero-element-3.png"
+import Element_4 from "../../images/home1/hero-element-4.png"
 
 const Hero = () => (
   <>

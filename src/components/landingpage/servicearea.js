@@ -1,10 +1,10 @@
 import React from "react"
-import Service_1 from "../../img/home2/service-1.png"
-import Service_2 from "../../img/home2/service-1.png"
-import Service_3 from "../../img/home2/service-1.png"
-import Service_4 from "../../img/home2/service-1.png"
-import Service_5 from "../../img/home2/service-1.png"
-import Service_6 from "../../img/home2/service-1.png"
+import Service_1 from "../../images/home2/service-1.png"
+import Service_2 from "../../images/home2/service-1.png"
+import Service_3 from "../../images/home2/service-1.png"
+import Service_4 from "../../images/home2/service-1.png"
+import Service_5 from "../../images/home2/service-1.png"
+import Service_6 from "../../images/home2/service-1.png"
 
 
 const ServiceArea = () => (

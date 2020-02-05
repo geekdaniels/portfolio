@@ -2,22 +2,22 @@ import React from "react"
 import {Link} from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 import ServiceArea from "../components/landingpage/servicearea"
 import ExperienceArea from "../components/landingpage/experience"
 import ProjectArea from "../components/landingpage/projectarea"
 import Testimonial from "../components/landingpage/testimonialarea"
 
-import Element_1 from "../img/home1/hero-element-1.png"
-import Element_2 from "../img/home1/hero-element-2.png"
-import Element_3 from "../img/home1/hero-element-3.png"
-import Element_4 from "../img/home1/hero-element-4.png"
-import About_img from "../img/home1/Untitled-1-01.png"
+import Element_1 from "../images/home1/hero-element-1.png"
+import Element_2 from "../images/home1/hero-element-2.png"
+import Element_3 from "../images/home1/hero-element-3.png"
+import Element_4 from "../images/home1/hero-element-4.png"
+import About_img from "../images/home1/Untitled-1-01.png"
 
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home" />
+      {/* <SEO /> */}
 
       <section className="hero-area">
         <div className="hero-element-1">

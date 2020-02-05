@@ -1,11 +1,11 @@
 import React from "react"
 
-import image_1 from "../../img/home2/work-1.jpg"
-import image_2 from "../../img/home2/work-2.jpg"
-import image_3 from "../../img/home2/work-3.jpg"
-import image_4 from "../../img/home2/work-4.jpg"
-import image_5 from "../../img/home2/work-5.jpg"
-import image_6 from "../../img/home2/work-6.jpg"
+import image_1 from "../../images/home2/work-1.jpg"
+import image_2 from "../../images/home2/work-2.jpg"
+import image_3 from "../../images/home2/work-3.jpg"
+import image_4 from "../../images/home2/work-4.jpg"
+import image_5 from "../../images/home2/work-5.jpg"
+import image_6 from "../../images/home2/work-6.jpg"
 
 
 const ProjectArea = () => (

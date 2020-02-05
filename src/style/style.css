@@ -67,7 +67,7 @@
 }
 
 div#preloader {
-  background: #515781 url("../img/loader.gif") no-repeat scroll center center;
+  background: #515781 url("../images/loader.gif") no-repeat scroll center center;
   height: 100%;
   left: 0;
   overflow: visible;
@@ -1393,7 +1393,7 @@ footer {
 /*  2. Single Blog
 /*----------------------------------------*/
 .innerpage-hero-area {
-  background-image: url(../img/single-blog/hero-bg.png);
+  background-image: url(../images/single-blog/hero-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1964,7 +1964,7 @@ footer {
 }
 
 .sidebar .sw-subscribe {
-  background-image: url(../img/blog/side-subscribe-bg.png);
+  background-image: url(../images/blog/side-subscribe-bg.png);
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -2031,7 +2031,7 @@ footer {
 /*  5. Pricing
 /*----------------------------------------*/
 .innerpage-hero-area.iha-pricing {
-  background-image: url(../img/pricing/hero-bg.png);
+  background-image: url(../images/pricing/hero-bg.png);
 }
 
 .page-pricing-area {
@@ -2171,7 +2171,7 @@ footer {
 /*  6. Contact
 /*----------------------------------------*/
 .iha-contact.innerpage-hero-area {
-  background: url(../img/contact/hero-bg.png);
+  background: url(../images/contact/hero-bg.png);
   background-size: cover;
 }
 
