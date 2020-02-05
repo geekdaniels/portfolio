@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "gatsby"
+import SEO from '../components/seo'
 
 import Layout from "../components/layout"
 // import SEO from "../components/seo"
@@ -17,7 +18,7 @@ import About_img from "../images/home1/Untitled-1-01.png"
 const IndexPage = () => {
   return (
     <Layout>
-      {/* <SEO /> */}
+      <SEO title="Home — Olufemi Oladotun Daniel - Frontend Developer and UI/UX Designer" />
 
       <section className="hero-area">
         <div className="hero-element-1">

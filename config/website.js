@@ -6,14 +6,14 @@ module.exports = {
     headline: 'I am Olufemi Oladotun Daniel, a UI/UX designer Based in Lagos, Nigeria with a lot of experience in ensuring user centered designs', // Headline for schema.org JSONLD
     url: 'https://www.olufemioladotun.com', // Domain of your site. No trailing slash!
     siteLanguage: 'en', // Language Tag on <html> element
-    logo: '/logo_dark.png', // Used for SEO
+    logo: 'src/images/seo_image.png', // Used for SEO
     ogLanguage: 'en_US', // Facebook Language
   
     // JSONLD / Manifest
     favicon: 'src/images/favicon.png', // Used for manifest favicon generation
     shortName: 'OlufemiDan', // shortname for manifest. MUST be shorter than 12 characters
     author: 'Olufemi Oladotun Daniel', // Author for schemaORGJSONLD
-    themeColor: '#3D63AE',
+    themeColor: '#000000',
     backgroundColor: '#EBEDF2',
   
     twitter: '@oladotun_07', // Twitter Username

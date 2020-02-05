@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   
   return (
     <div>
-      <SEO />
+      {/* <SEO /> */}
       <Header />
       {children}
       <SocialArea />

@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 const Contact = () => (
   <Layout>
-    <SEO title="Contact" />
+    <SEO title="Contact Me — Olufemi Oladotun Daniel - Frontend Developer and UI/UX Designer" />
 
   </Layout>
 )
