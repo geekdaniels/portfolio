@@ -50,16 +50,16 @@ const Contact = () => (
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                     <div className="contact-input-box">
-                      <input type="text" placeholder="Full name" />
+                      <input type="text" name="fullname" placeholder="Full name" />
                     </div>
                     <div className="contact-input-box">
-                      <input type="text" placeholder="Organization Name" />
+                      <input type="text" name="organization_name" placeholder="Organization Name" />
                     </div>
                     <div className="contact-input-box">
-                      <input type="text" placeholder="Budget" />
+                      <input type="text" name="budget" placeholder="Budget" />
                     </div>
                     <div className="contact-input-box">
-                      <input type="text" placeholder="Phone number" />
+                      <input type="text" name="phone_number" placeholder="Phone number" />
                     </div>
                     <div className="contact-input-box">
                       <input
@@ -71,13 +71,13 @@ const Contact = () => (
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                     <div className="contact-input-box">
-                      <input type="email" placeholder="Email address" />
+                      <input type="email" name="email" placeholder="Email address" />
                     </div>
                     <div className="contact-input-box">
-                      <input type="text" placeholder="Date or Timeframe" />
+                      <input type="text" name="timeframe" placeholder="Date or Timeframe" />
                     </div>
                     <div className="contact-input-box">
-                      <textarea placeholder="Message"></textarea>
+                      <textarea name="message" placeholder="Message"></textarea>
                     </div>
                   </div>
                 </div>
