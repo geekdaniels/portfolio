@@ -18,7 +18,6 @@ import "../fonts/stylesheet.css"
 import "../style/style.css"
 import "../style/responsive.css"
 
-import SEO from './seo'
 import Header from "./header"
 import Footer from "./footer"
 import SocialArea from "./socialarea"
@@ -27,7 +26,6 @@ const Layout = ({ children }) => {
   
   return (
     <div>
-      {/* <SEO /> */}
       <Header />
       {children}
       <SocialArea />
