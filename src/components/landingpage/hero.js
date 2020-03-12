@@ -14,7 +14,15 @@ const Hero = () => (
 			 {/* <div className="hero-banner"><img src="img/home1/team06.png" alt=""></div>  */}
 			<div className="container">
 				<div className="row">
-					<div className="col-lg-10 offset-lg-1 col-12">
+					<div className="col-lg-10 col-12">
+						<div className="hero-content text-center">
+							<h3 className="intro">Hello, I’m</h3>
+							<h2 className="title">Olufemi Oladotun Daniel</h2>
+							<h3 className="desg">Frontend Developer & UI/UX Designer</h3>
+						</div>
+					</div>
+
+					<div className="col-lg-4 col-12">
 						<div className="hero-content text-center">
 							<h3 className="intro">Hello, I’m</h3>
 							<h2 className="title">Olufemi Oladotun Daniel</h2>

@@ -521,7 +521,7 @@ dd {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   color: #FFC576;
-  border: 1px solid #FFC576;
+  border: 1px solid #F29D28;
   background: transparent;
   cursor: pointer;
   letter-spacing: 0;
@@ -534,7 +534,7 @@ dd {
 }
 
 .btn-style-1:hover {
-  background: #FFC576;
+  background: #F29D28;
   color: #ffffff;
 }
 
@@ -663,7 +663,7 @@ header {
 .hero-area {
   background: #232639;
   position: relative;
-  padding: 274px 0;
+  padding: 150px 0 0;
 }
 
 .hero-area .hero-element-1 {
@@ -729,7 +729,7 @@ header {
 }
 
 .hero-content .title {
-  font-size: 100px;
+  font-size: 85px;
   line-height: 100px;
   margin: 12px 0 0;
 }

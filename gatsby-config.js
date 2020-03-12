@@ -43,14 +43,14 @@ module.exports = {
     //   },
     // },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: website.googleAnalyticsID,
       },
     },
     // 'gatsby-plugin-sitemap',
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: website.title,
         short_name: website.titleAlt,
@@ -58,10 +58,18 @@ module.exports = {
         start_url: pathPrefix,
         background_color: website.backgroundColor,
         theme_color: website.themeColor,
-        display: 'minimal-ui',
+        display: "minimal-ui",
         icon: website.favicon,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-hotjar-tracking`,
+    //   options: {
+    //     includeInDevelopment: false,
+    //     id: 1683362,
+    //     sv: 6,
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
