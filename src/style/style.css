@@ -734,11 +734,10 @@ header {
   margin: 12px 0 0;
 }
 
-.hero-content .title span {
-  font-size: 59px;
+.hero-content .sub_title {
+  font-size: 40px;
   line-height: 100px;
-  margin: 12px 0 0;
-  color: #FFC576;
+  color: #FFC576 !important;
 }
 
 .hero-content .desg {

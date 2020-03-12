@@ -42,7 +42,7 @@ const IndexPage = () => {
                 <h2 className="title">
                   Get Super fast websites that bring sales and gain customers.
                 </h2>
-                <h2 className="title mt-2 mb-2 text-white"><span className="color">for businesses</span></h2>
+                <h4 className="sub_title mt-lg-2 mb-2 text-white">for businesses</h4>
 
                 <Link to="/contact" class="link btn-style-1">
                   Get Started
