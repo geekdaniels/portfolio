@@ -40,11 +40,9 @@ const IndexPage = () => {
             <div className="col-lg-7 col-12">
               <div className="hero-content text-left">
                 <h2 className="title">
-                  Get <span className="color">Super fast</span> websites that
-                  bring <span className="color">sales</span> and{" "}
-                  <span className="color">gain customers.</span>
+                  Get Super fast websites that bring sales and gain customers.
                 </h2>
-                <h2 className="intro mt-4 mb-5 text-white">for businesses</h2>
+                <h2 className="title mt-2 mb-2 text-white"><span className="color">for businesses</span></h2>
 
                 <Link to="/contact" class="link btn-style-1">
                   Get Started
