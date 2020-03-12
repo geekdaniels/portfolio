@@ -19,7 +19,7 @@ import Profile_img from "../images/olufemi-oladotun-daniel.png"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home — Olufemi Oladotun Daniel - Frontend Developer and UI/UX Designer" />
+      <SEO title="Home — Olufemi Oladotun Daniel - Frontend Developer and Web optimization specialist" />
 
       <section className="hero-area">
         <div className="hero-element-1">
@@ -40,11 +40,13 @@ const IndexPage = () => {
             <div className="col-lg-7 col-12">
               <div className="hero-content text-left">
                 <h2 className="title">
-                  Get Super fast websites that bring sales
+                  Get <span className="color">Super fast</span> websites that
+                  bring <span className="color">sales</span> and{" "}
+                  <span className="color">gain customers.</span>
                 </h2>
-                <h3 className="intro mt-5"> for small businesses</h3>
+                <h2 className="intro mt-4 mb-5 text-white">for businesses</h2>
 
-                <Link to="/contact" class="link btn-style-1 mt-4">
+                <Link to="/contact" class="link btn-style-1">
                   Get Started
                 </Link>
               </div>
@@ -86,7 +88,8 @@ const IndexPage = () => {
                   </p>
                 </div>
 
-                <a target="_blank"
+                <a
+                  target="_blank"
                   href="https://view.flodesk.com/pages/5e66c196ea014a002641b0cb"
                   className="link btn-style-1 mt-5 mx-auto"
                 >
