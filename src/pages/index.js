@@ -19,40 +19,49 @@ import Profile_img from "../images/olufemi-oladotun-daniel.png"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home — Olufemi Oladotun Daniel - Frontend Developer and Web optimization specialist" />
+      <SEO
+        title="Olufemi Oladotun Daniel - Frontend Developer, Web Optimization Specialist"
+        description="I am Olufemi Oladotun Daniel, a Frontend Developer and Web Optimization Specialist with a lot of experience in ensuring websites are fast, bring sales and generate lead that turn to clients"
+      />
 
       <section className="hero-area">
         <div className="hero-element-1">
-          <img src={Element_1} alt="" />
+          <img src={Element_1} alt="Welcome to olufemi oladotun" />
         </div>
         <div className="hero-element-2">
-          <img src={Element_2} alt="" />
+          <img src={Element_2} alt="Welcome to olufemi oladotun" />
         </div>
         <div className="hero-element-3">
-          <img src={Element_3} alt="" />
+          <img src={Element_3} alt="Welcome to olufemi oladotun" />
         </div>
         <div className="hero-element-4">
-          <img src={Element_4} alt="" />
+          <img src={Element_4} alt="Welcome to olufemi oladotun" />
         </div>
         {/* <div className="hero-banner"><img src="img/home1/team06.png" alt=""></div>  */}
         <div className="container">
           <div className="row">
             <div className="col-lg-7 col-12">
               <div className="hero-content text-left">
-                <h2 className="title">
+                <h1 className="title">
                   Get Super fast websites that bring sales and gain customers.
-                </h2>
-                <h4 className="sub_title mt-lg-2 mb-2 text-white">for businesses</h4>
+                </h1>
+                <h4 className="sub_title mt-lg-2 mb-2 text-white">
+                  for businesses
+                </h4>
 
                 <Link to="/contact" class="link btn-style-1">
-                  Get Started
+                  Contact me
                 </Link>
               </div>
             </div>
 
             <div className="col-lg-5 col-12">
               <div className="hero-content text-center">
-                <img loading="lazy" src={Profile_img} alt="Olufemi Oladotun Daniel" />
+                <img
+                  loading="lazy"
+                  src={Profile_img}
+                  alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
+                />
               </div>
             </div>
           </div>

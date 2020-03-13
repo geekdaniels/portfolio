@@ -23,8 +23,8 @@ class Header extends React.Component {
         <div className="row">
           <div className="col-lg-2 col-sm-4 col-5">
             <div className="">
-              <Link to="/" className="link">
-                <img src={Logo} alt="" />
+              <Link to="/" className="link" title="Welcome I am olufemi oladotun Daniel, Web optimization specialist">
+                <img src={Logo} alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist" />
               </Link>
             </div>
           </div>
@@ -32,7 +32,7 @@ class Header extends React.Component {
             <div className="main-menu stellarnav d-none">
               <ul>
                 <li>
-                  <Link to="/" activeClassName="active">
+                  <Link to="/" activeClassName="active" title="Welcome I am olufemi oladotun Daniel, Web optimization specialist">
                     Home
                   </Link>
                 </li>
@@ -42,7 +42,7 @@ class Header extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog" activeClassName="active">
+                  <Link to="/blog" activeClassName="active" title="Read blog posts by olufemi oladotun Daniel">
                     Blog
                   </Link>
                 </li>
@@ -56,7 +56,7 @@ class Header extends React.Component {
           </div>
           <div className="col-lg-2 col-sm-4 col-12 d-none d-sm-block">
             <div className="lets-chat">
-              <Link to="/contact" className="link btn-style-1">
+              <Link to="/contact" className="link btn-style-1" title="Contact and get in touch with me">
                 Contact Me
               </Link>
             </div>

@@ -10,7 +10,7 @@ const SocialArea = () => (
 						<div className="section-title">
 							<p className="intro">SOCIAL MEDIA</p>
 							<h2 className="title">Let’s Get In Touch</h2>
-							<p>I love to design and build things. You can react out to me on any of these platforms and I will respond to you asap.</p>
+							<p>I love to design and build things especially fast and optimized websites that bring sales. You can reach out to me on any of these platforms and I will respond to you asap.</p>
 						</div>
 					</div>
 				</div>

@@ -10,8 +10,8 @@ const Footer = () => (
           <div class="row">
             <div class="col-lg-4 col-sm-3 col-12">
               <div class="f-logo">
-                <Link to="/" class="link">
-                  <img loading="lazy" src={Logo} alt="" style={{width: "30%"}} />
+                <Link to="/" class="link" title="Welcome I am olufemi oladotun Daniel, Web optimization specialist">
+                  <img loading="lazy" src={Logo} alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist" style={{width: "30%"}} />
                 </Link>
               </div>
             </div>
@@ -22,8 +22,8 @@ const Footer = () => (
             </div>
             <div class="col-lg-4 col-sm-4 col-12">
               <div class="f-chat">
-                <Link to="/contact" class="link btn-style-1">
-                  LET’S CHAT
+                <Link to="/contact" class="link btn-style-1" title="Contact and get in touch with me">
+                  Contact Me
                 </Link>
               </div>
             </div>
