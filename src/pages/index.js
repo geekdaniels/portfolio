@@ -20,7 +20,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="Olufemi Oladotun Daniel - Frontend Developer, Web Optimization Specialist"
+        title="Olufemi Oladotun Daniel - Web Optimization Specialist"
         description="I am Olufemi Oladotun Daniel, a Frontend Developer and Web Optimization Specialist with a lot of experience in ensuring websites are fast, bring sales and generate lead that turn to clients"
       />
 
