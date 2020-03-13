@@ -13,7 +13,7 @@ import Element_1 from "../images/home1/hero-element-1.png"
 import Element_2 from "../images/home1/hero-element-2.png"
 import Element_3 from "../images/home1/hero-element-3.png"
 import Element_4 from "../images/home1/hero-element-4.png"
-import About_img from "../images/home1/Untitled-1-01.png"
+// import About_img from "../images/home1/Untitled-1-01.png"
 import Profile_img from "../images/olufemi-oladotun-daniel.png"
 
 const IndexPage = () => {
@@ -52,7 +52,7 @@ const IndexPage = () => {
 
             <div className="col-lg-5 col-12">
               <div className="hero-content text-center">
-                <img src={Profile_img} alt="Olufemi Oladotun Daniel" />
+                <img loading="lazy" src={Profile_img} alt="Olufemi Oladotun Daniel" />
               </div>
             </div>
           </div>
@@ -88,6 +88,7 @@ const IndexPage = () => {
 
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://view.flodesk.com/pages/5e66c196ea014a002641b0cb"
                   className="link btn-style-1 mt-5 mx-auto"
                 >

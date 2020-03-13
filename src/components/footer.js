@@ -11,7 +11,7 @@ const Footer = () => (
             <div class="col-lg-4 col-sm-3 col-12">
               <div class="f-logo">
                 <Link to="/" class="link">
-                  <img src={Logo} alt="" style={{width: "30%"}} />
+                  <img loading="lazy" src={Logo} alt="" style={{width: "30%"}} />
                 </Link>
               </div>
             </div>

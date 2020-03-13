@@ -12,7 +12,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         
-        <script
+        <script defer
           src="https://code.jquery.com/jquery-3.3.1.min.js"
         />
         {props.headComponents}

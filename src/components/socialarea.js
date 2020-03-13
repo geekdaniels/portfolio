@@ -28,7 +28,7 @@ const SocialArea = () => (
 						<a href="https://www.linkedin.com/in/olufemi-oladotun-daniel/" target="_blank" rel="noopener noreferrer" >
 							<div className="single-social">
 								<h3 className="title">LinkedIn</h3>
-								<p className="info">Professional social profile</p>
+								<p className="info">My professional social profile</p>
 								<span className="icon"><i className="fab fa-linkedin-in"></i></span>
 							</div>
 						</a>
@@ -37,7 +37,7 @@ const SocialArea = () => (
 						<a href="https://www.instagram.com/holadotun/" target="_blank" rel="noopener noreferrer">
 							<div className="single-social">
 								<h3 className="title">Instagram</h3>
-								<p className="info">Image base social communications</p>
+								<p className="info">Image based social communications</p>
 								<span className="icon"><i className="fab fa-instagram"></i></span>
 							</div>
 						</a>
@@ -46,7 +46,7 @@ const SocialArea = () => (
 						<a href="https://twitter.com/oladotun_07" target="_blank" rel="noopener noreferrer">
 							<div className="single-social">
 								<h3 className="title">Twitter</h3>
-								<p className="info">Random thoughts</p>
+								<p className="info">I share my random thoughts here</p>
 								<span className="icon"><i className="fab fa-twitter"></i></span>
 							</div>
 						</a>
