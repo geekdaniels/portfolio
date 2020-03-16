@@ -4,10 +4,11 @@ import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 // import SEO from "../components/seo"
+import AboutMe from "../components/landingpage/aboutme"
 // import ServiceArea from "../components/landingpage/servicearea"
 // import ExperienceArea from "../components/landingpage/experience"
 // import ProjectArea from "../components/landingpage/projectarea"
-// import Testimonial from "../components/landingpage/testimonialarea"
+import Testimonial from "../components/landingpage/testimonialarea"
 
 import Element_1 from "../images/home1/hero-element-1.png"
 import Element_2 from "../images/home1/hero-element-2.png"
@@ -68,6 +69,9 @@ const IndexPage = () => {
         </div>
       </section>
 
+      <Testimonial />
+      <AboutMe />
+
       <section className="h2-about-area">
         <div className="container">
           <div className="row justify-content-center">
@@ -109,12 +113,13 @@ const IndexPage = () => {
         </div>
       </section>
 
+      
       {/* 
       <ServiceArea />
       <ExperienceArea />
 	  <ProjectArea /> 
 	  */}
-      {/* <Testimonial /> */}
+      
     </Layout>
   )
 }

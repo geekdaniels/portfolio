@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const Design = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Services" />
 
   </Layout>
 )

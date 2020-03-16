@@ -13,18 +13,18 @@ class Testimonial extends Component {
   state = {
     responsive: {
       0: {
-          items: 1
+        items: 1,
       },
       480: {
-          items: 1
+        items: 1,
       },
       760: {
-          items: 2
-      }
-  }
+        items: 2,
+      },
+    },
   }
   render() {
-    return(
+    return (
       <>
         <section className="testimonial-area">
           <div className="container">
@@ -32,7 +32,7 @@ class Testimonial extends Component {
               <div className="col-12">
                 <div className="section-title">
                   <p className="intro">TESTIMONIALS</p>
-                  <h2 className="title">Happy Clients Says</h2>
+                  {/* <h2 className="title">Happy Clients Says</h2> */}
                 </div>
               </div>
             </div>
@@ -52,6 +52,41 @@ class Testimonial extends Component {
               >
                 <div className="single-testimonial">
                   <div className="info">
+                    {/* <div className="img">
+                      <img src={Element_1} alt="" />
+                    </div> */}
+                    <div className="info-right">
+                      <h3 className="name">Omotayo Olaiya</h3>
+                      <p className="desg">
+                        Agile Project Manager | Product Manager
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text">
+                    Much more than Daniel Olufemi's adeptness and resilient
+                    problem-solving prowess, He is a man of great character. He
+                    is a patient man, great listener, excellent communicator,
+                    reliable team member and a man with great time management
+                    skills. He puts his heart into every task he executes.
+                  </p>
+                </div>
+                <div className="single-testimonial">
+                  <div className="info">
+                    {/* <div className="img">
+                      <img src={Element_2} alt="" />
+                    </div> */}
+                    <div className="info-right">
+                      <h3 className="name">Stephen Enunwah</h3>
+                      <p className="desg">Software Engineer @ Interswitch</p>
+                    </div>
+                  </div>
+                  <p className="text">
+                    Elite Developer, Goal Driven ... you can be sure of results
+                    while working with "Olufemi Oladotun Daniel
+                  </p>
+                </div>
+                {/* <div className="single-testimonial">
+                  <div className="info">
                     <div className="img">
                       <img src={Element_1} alt="" />
                     </div>
@@ -67,8 +102,8 @@ class Testimonial extends Component {
                     people with a passion for financial markets. Our goal is to
                     achieve continuous and sustainable growth of our clients.
                   </p>
-                </div>
-                <div className="single-testimonial">
+                </div> */}
+                {/* <div className="single-testimonial">
                   <div className="info">
                     <div className="img">
                       <img src={Element_2} alt="" />
@@ -85,43 +120,7 @@ class Testimonial extends Component {
                     people with a passion for financial markets. Our goal is to
                     achieve continuous and sustainable growth of our clients.
                   </p>
-                </div>
-                <div className="single-testimonial">
-                  <div className="info">
-                    <div className="img">
-                      <img src={Element_1} alt="" />
-                    </div>
-                    <div className="info-right">
-                      <h3 className="name">Martha Sandoval</h3>
-                      <p className="desg">Product Designer at CodeNext</p>
-                    </div>
-                  </div>
-                  <p className="text">
-                    We are motivated by the satisfaction of our clients. Put
-                    your trust in us and share in our growth Asset Management is
-                    made up of a team of expert, committed and experienced
-                    people with a passion for financial markets. Our goal is to
-                    achieve continuous and sustainable growth of our clients.
-                  </p>
-                </div>
-                <div className="single-testimonial">
-                  <div className="info">
-                    <div className="img">
-                      <img src={Element_2} alt="" />
-                    </div>
-                    <div className="info-right">
-                      <h3 className="name">Mildred Meyer</h3>
-                      <p className="desg">Product Designer at CodeNext</p>
-                    </div>
-                  </div>
-                  <p className="text">
-                    We are motivated by the satisfaction of our clients. Put
-                    your trust in us and share in our growth Asset Management is
-                    made up of a team of expert, committed and experienced
-                    people with a passion for financial markets. Our goal is to
-                    achieve continuous and sustainable growth of our clients.
-                  </p>
-                </div>
+                </div> */}
               </OwlCarousel>
             </div>
           </div>

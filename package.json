@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Olufemi Oladotun Daniel",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Website for Olufemi Oladotun Daniel - Web Optimization Specialist Based in Lagos, Nigeria ",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Olufemi Oladotun Daniel <olufemidaniels07@gmail.com>",
   "dependencies": {
     "@loadable/component": "^5.12.0",
     "gatsby": "^2.19.5",
