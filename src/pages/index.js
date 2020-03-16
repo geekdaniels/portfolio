@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import Img from "gatsby-image"
+import { Link, StaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 
 import Layout from "../components/layout"
@@ -14,8 +15,6 @@ import Element_1 from "../images/home1/hero-element-1.png"
 import Element_2 from "../images/home1/hero-element-2.png"
 import Element_3 from "../images/home1/hero-element-3.png"
 import Element_4 from "../images/home1/hero-element-4.png"
-// import About_img from "../images/home1/Untitled-1-01.png"
-import Profile_img from "../images/olufemi-oladotun-daniel.png"
 
 const IndexPage = () => {
   return (
@@ -25,49 +24,66 @@ const IndexPage = () => {
         description="I am Olufemi Oladotun Daniel, a Frontend Developer and Web Optimization Specialist with a lot of experience in ensuring websites are fast, bring sales and generate lead that turn to clients"
       />
 
-      <section className="hero-area">
-        <div className="hero-element-1">
-          <img src={Element_1} alt="Welcome to olufemi oladotun" />
-        </div>
-        <div className="hero-element-2">
-          <img src={Element_2} alt="Welcome to olufemi oladotun" />
-        </div>
-        <div className="hero-element-3">
-          <img src={Element_3} alt="Welcome to olufemi oladotun" />
-        </div>
-        <div className="hero-element-4">
-          <img src={Element_4} alt="Welcome to olufemi oladotun" />
-        </div>
-        {/* <div className="hero-banner"><img src="img/home1/team06.png" alt=""></div>  */}
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-7 col-12">
-              <div className="hero-content text-left">
-                <h1 className="title">
-                  Get Super fast websites that bring sales and gain customers.
-                </h1>
-                <h4 className="sub_title mt-lg-2 mb-2 text-white">
-                  for businesses
-                </h4>
+      <StaticQuery
+        query={graphql`
+          {
+            profile_img: file(
+              relativePath: { eq: "olufemi-oladotun-daniel.png" }
+            ) {
+              childImageSharp {
+                fluid(maxWidth: 1600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        `}
+        render={data => (
+          <section className="hero-area">
+            <div className="hero-element-1">
+              <img src={Element_1} alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist" />
+            </div>
+            <div className="hero-element-2">
+              <img src={Element_2} alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist" />
+            </div>
+            <div className="hero-element-3">
+              <img src={Element_3} alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist" />
+            </div>
+            <div className="hero-element-4">
+              <img src={Element_4} alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist" />
+            </div>
+            
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-7 col-12">
+                  <div className="hero-content text-left">
+                    <h1 className="title">
+                      Get Super fast websites that bring sales and gain
+                      customers.
+                    </h1>
+                    <h4 className="sub_title mt-lg-2 mb-2 text-white">
+                      for businesses
+                    </h4>
 
-                <Link to="/contact" class="link btn-style-1">
-                  Contact me
-                </Link>
+                    <Link to="/contact" class="link btn-style-1">
+                      Contact me
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="col-lg-5 col-12">
+                  <div className="hero-content text-center">
+                    <Img
+                      fluid={data.profile_img.childImageSharp.fluid}
+                      alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div className="col-lg-5 col-12">
-              <div className="hero-content text-center">
-                <img
-                  loading="lazy"
-                  src={Profile_img}
-                  alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        )}
+      />
 
       <Testimonial />
       <AboutMe />
@@ -113,13 +129,11 @@ const IndexPage = () => {
         </div>
       </section>
 
-      
       {/* 
       <ServiceArea />
       <ExperienceArea />
 	  <ProjectArea /> 
 	  */}
-      
     </Layout>
   )
 }

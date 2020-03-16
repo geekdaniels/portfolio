@@ -7,7 +7,7 @@ const AboutMe = () => (
     <StaticQuery
       query={graphql`
         {
-          about_olufemi: file(relativePath: {eq: "about_olufemi.jpg"}){
+          about_olufemi: file(relativePath: {eq: "about_olufemi.png"}){
             childImageSharp {
               fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
@@ -25,7 +25,7 @@ const AboutMe = () => (
                   <div className="banner">
                     <Img
                       fluid={data.about_olufemi.childImageSharp.fluid}
-                      alt=""
+                      alt="about olufemi oladotun"
                     />
                   </div>
                 </div>
@@ -34,7 +34,7 @@ const AboutMe = () => (
               <div className="col-lg-7 col-12 d-flex align-items-center">
                 <div className="h2-about-content">
                   <div className="section-title">
-                    <p className="intro title">ABOUT</p>
+                    <p className="intro title mt-5 mt-lg-0">ABOUT</p>
                   </div>
                   <p className="text">
                     Website is so slow your visitors barely stay to even realise

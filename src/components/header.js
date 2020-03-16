@@ -1,6 +1,7 @@
-import { Link } from "gatsby"
+import Img from "gatsby-image"
+import { Link, StaticQuery, graphql } from "gatsby"
+
 import React from "react"
-import Logo from "../images/logo.png"
 
 class Header extends React.Component {
   state = {
@@ -18,52 +19,86 @@ class Header extends React.Component {
 
   render() {
     return (
-    <header className={this.state.isTop ? "navbar-fixed-top" : ""}>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-2 col-sm-4 col-5">
-            <div className="">
-              <Link to="/" className="link" title="Welcome I am olufemi oladotun Daniel, Web optimization specialist">
-                <img src={Logo} alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist" />
-              </Link>
+      <header className={this.state.isTop ? "navbar-fixed-top" : ""}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-2 col-sm-4 col-5">
+              <div className="">
+                <Link
+                  to="/"
+                  className="link"
+                  title="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
+                >
+                  <StaticQuery
+                    query={graphql`
+                      {
+                        logo: file(relativePath: { eq: "logo.png" }) {
+                          childImageSharp {
+                            fluid(maxWidth: 1600) {
+                              ...GatsbyImageSharpFluid
+                            }
+                          }
+                        }
+                      }
+                    `}
+                    render={data => (
+                      <Img
+                        fluid={data.logo.childImageSharp.fluid}
+                        alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
+                      />
+                    )}
+                  />
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-8 col-sm-4 col-7">
-            <div className="main-menu stellarnav d-none">
-              <ul>
-                <li>
-                  <Link to="/" activeClassName="active" title="Welcome I am olufemi oladotun Daniel, Web optimization specialist">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about" activeClassName="active">
-                    Designs
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/blog" activeClassName="active" title="Read blog posts by olufemi oladotun Daniel">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/faq" activeClassName="active">
-                    FAQs
-                  </Link>
-                </li>
-              </ul>
+            <div className="col-lg-8 col-sm-4 col-7">
+              <div className="main-menu stellarnav d-none">
+                <ul>
+                  <li>
+                    <Link
+                      to="/"
+                      activeClassName="active"
+                      title="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/about" activeClassName="active">
+                      Designs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/blog"
+                      activeClassName="active"
+                      title="Read blog posts by olufemi oladotun Daniel"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/faq" activeClassName="active">
+                      FAQs
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-2 col-sm-4 col-12 d-none d-sm-block">
-            <div className="lets-chat">
-              <Link to="/contact" className="link btn-style-1" title="Contact and get in touch with me">
-                Contact Me
-              </Link>
+            <div className="col-lg-2 col-sm-4 col-12 d-none d-sm-block">
+              <div className="lets-chat">
+                <Link
+                  to="/contact"
+                  className="link btn-style-1"
+                  title="Contact and get in touch with me"
+                >
+                  Contact Me
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
     )
   }
 }
