@@ -106,7 +106,6 @@ const Contact = () => (
                     {/* <div className="contact-input-box">
                       <input type="text" name="timeframe" placeholder="Date or Timeframe" />
                     </div> */}
-                    
 
                     <div className="contact-input-box">
                       <input

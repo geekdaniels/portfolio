@@ -1,5 +1,5 @@
 {
-  "name": "Olufemi Oladotun Daniel",
+  "name": "Olufemi_Oladotun_Daniel",
   "private": true,
   "description": "Website for Olufemi Oladotun Daniel - Web Optimization Specialist Based in Lagos, Nigeria ",
   "version": "0.1.0",
@@ -8,6 +8,7 @@
     "@loadable/component": "^5.12.0",
     "gatsby": "^2.19.5",
     "gatsby-image": "^2.2.39",
+    "gatsby-plugin-facebook-analytics": "^2.2.23",
     "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-offline": "^3.0.32",
