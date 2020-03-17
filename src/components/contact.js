@@ -74,7 +74,7 @@ const Contact = () => (
                     </div>
 
                     <div className="contact-input-box">
-                      <label htmlFor="phone_number" className="small">
+                      <label htmlFor="message" className="small">
                         Message
                       </label>
                       <textarea
