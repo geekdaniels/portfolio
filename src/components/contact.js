@@ -99,7 +99,7 @@ const Contact = () => (
                         autocomplete="tel"
                       />
                       <label htmlFor="phone_number" className="small">
-                        This is important, I'll like to call you!
+                        This is important, I'll like to call you! So we can speed thing up...
                       </label>
                     </div>
 
