@@ -21,7 +21,7 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="Olufemi Oladotun Daniel - Web Optimization Specialist"
-        description="I am Olufemi Oladotun Daniel, a Frontend Developer and Web Optimization Specialist with a lot of experience in ensuring websites are fast, bring sales and generate lead that turn to clients"
+        desc="I am Olufemi Oladotun Daniel, a web optimization specialist experienced in developing super fast websites that generate leads and bring sales."
       />
 
       <StaticQuery

@@ -7,7 +7,7 @@ const AboutMe = () => (
     <StaticQuery
       query={graphql`
         {
-          about_olufemi: file(relativePath: {eq: "about_olufemi.png"}){
+          about_olufemi: file(relativePath: { eq: "about_olufemi.png" }) {
             childImageSharp {
               fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
@@ -16,7 +16,7 @@ const AboutMe = () => (
           }
         }
       `}
-      render={(data) => (
+      render={data => (
         <section className="h2-about-area social-area pt-4">
           <div className="container">
             <div className="row">
@@ -52,6 +52,14 @@ const AboutMe = () => (
                     experience and give you a clear roadmap to a better website
                     that shows you how to fix the issues that are holding you
                     back.
+                  </p>
+
+                  <p className="text">
+                    Is your website slow? I'll turn it into a{" "}
+                    <span className="color">
+                      super fast website that bring sales and gain customers
+                    </span>
+                    .
                   </p>
                   {/* <Link to="/about" className="link btn-style-1 mt-5">
                     Find out more about Daniel
