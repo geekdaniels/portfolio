@@ -4,8 +4,8 @@ import Loadable from "@loadable/component"
 import "owl.carousel/dist/assets/owl.carousel.css"
 import "owl.carousel/dist/assets/owl.theme.default.css"
 
-// import Element_1 from "../../images/home1/photo-1534528741775-53994a69daeb.png"
-// import Element_2 from "../../images/home1/photo-1545975645-ea9501a81d76.png"
+import omotayo from "../../images/home1/omotayo.jpg"
+import stephen from "../../images/home1/stephen.jpg"
 
 const OwlCarousel = Loadable(() => import("react-owl-carousel"))
 
@@ -32,7 +32,7 @@ class Testimonial extends Component {
               <div className="col-12">
                 <div className="section-title">
                   <p className="intro">TESTIMONIALS</p>
-                  {/* <h2 className="title">Happy Clients Says</h2> */}
+                  <h2 className="title">Happy Clients Says</h2>
                 </div>
               </div>
             </div>
@@ -52,9 +52,15 @@ class Testimonial extends Component {
               >
                 <div className="single-testimonial">
                   <div className="info">
-                    {/* <div className="img">
-                      <img src={Element_1} alt="" />
-                    </div> */}
+                    <div className="img">
+                      <img
+                        src={omotayo}
+                        alt="Omotayo Olaiya | Much more than Daniel Olufemi's adeptness and resilient
+                    problem-solving prowess, He is a man of great character."
+                        title="Omotayo Olaiya | Much more than Daniel Olufemi's adeptness and resilient
+                    problem-solving prowess, He is a man of great character."
+                      />
+                    </div>
                     <div className="info-right">
                       <h3 className="name">Omotayo Olaiya</h3>
                       <p className="desg">
@@ -72,9 +78,11 @@ class Testimonial extends Component {
                 </div>
                 <div className="single-testimonial">
                   <div className="info">
-                    {/* <div className="img">
-                      <img src={Element_2} alt="" />
-                    </div> */}
+                    <div className="img">
+                      <img src={stephen} alt="Stephen Enunwah | Elite Developer, Goal Driven ... you can be sure of results
+                    while working with Olufemi Oladotun Daniel" title="Stephen Enunwah | Elite Developer, Goal Driven ... you can be sure of results
+                    while working with Olufemi Oladotun Daniel" />
+                    </div>
                     <div className="info-right">
                       <h3 className="name">Stephen Enunwah</h3>
                       <p className="desg">Software Engineer @ Interswitch</p>
@@ -82,7 +90,7 @@ class Testimonial extends Component {
                   </div>
                   <p className="text">
                     Elite Developer, Goal Driven ... you can be sure of results
-                    while working with "Olufemi Oladotun Daniel
+                    while working with "Olufemi Oladotun Daniel"
                   </p>
                 </div>
                 {/* <div className="single-testimonial">

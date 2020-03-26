@@ -34,11 +34,11 @@ const AboutMe = () => (
               <div className="col-lg-7 col-12 d-flex align-items-center">
                 <div className="h2-about-content">
                   <div className="section-title">
-                    <p className="intro title mt-5 mt-lg-0">ABOUT</p>
+                    <p className="intro title mt-5 mt-lg-0">ABOUT ME</p>
                   </div>
                   <p className="text">
-                    Website is so slow your visitors barely stay to even realise
-                    what it's about? <br />
+                    Your website is so slow your visitors barely stay to even
+                    realise what it's about? <br />
                     <span className="color">Let me help.</span>
                   </p>
                   <p className="text">
@@ -57,7 +57,7 @@ const AboutMe = () => (
                   <p className="text">
                     Is your website slow? I'll turn it into a{" "}
                     <span className="color">
-                      super fast website that bring sales and gain customers
+                      super fast website that brings sales and gain customers
                     </span>
                     .
                   </p>
@@ -67,7 +67,8 @@ const AboutMe = () => (
                 </div>
               </div>
             </div>
-          </div>
+
+           </div>
         </section>
       )}
     />

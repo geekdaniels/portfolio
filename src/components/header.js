@@ -52,9 +52,9 @@ class Header extends React.Component {
               </div>
             </div>
             <div className="col-lg-8 col-sm-4 col-7">
-              <div className="main-menu stellarnav d-none">
+              <div className="main-menu stellarnav">
                 <ul>
-                  <li>
+                  <li className="d-none">
                     <Link
                       to="/"
                       activeClassName="active"
@@ -65,10 +65,11 @@ class Header extends React.Component {
                   </li>
                   <li>
                     <Link to="/about" activeClassName="active">
-                      Designs
+                      About
                     </Link>
                   </li>
-                  <li>
+
+                  <li className="d-none">
                     <Link
                       to="/blog"
                       activeClassName="active"
@@ -77,7 +78,8 @@ class Header extends React.Component {
                       Blog
                     </Link>
                   </li>
-                  <li>
+
+                  <li className="d-none">
                     <Link to="/faq" activeClassName="active">
                       FAQs
                     </Link>

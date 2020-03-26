@@ -16,10 +16,10 @@ const SocialArea = () => (
 				</div>
 				<div className="row">
 					<div className="col-lg-4 col-sm-6 col-12">
-						<a href="mailto:olufemidaniels07@gmail.com">
+						<a href="mailto:bygeekdaniels@gmail.com">
 							<div className="single-social">
 								<h3 className="title">Email Me</h3>
-								<p className="info">olufemidaniels07@gmail.com</p>
+								<p className="info">bygeekdaniels@gmail.com</p>
 								<span className="icon"><i className="far fa-envelope"></i></span>
 							</div>
 						</a>
@@ -34,7 +34,7 @@ const SocialArea = () => (
 						</a>
 					</div>
 					<div className="col-lg-4 col-sm-6 col-12">
-						<a href="https://www.instagram.com/holadotun/" target="_blank" rel="noopener noreferrer">
+						<a href="https://www.instagram.com/bygeekdaniels/" target="_blank" rel="noopener noreferrer">
 							<div className="single-social">
 								<h3 className="title">Instagram</h3>
 								<p className="info">Image based social communications</p>
@@ -43,7 +43,7 @@ const SocialArea = () => (
 						</a>
 					</div>
 					<div className="col-lg-4 col-sm-6 col-12">
-						<a href="https://twitter.com/oladotun_07" target="_blank" rel="noopener noreferrer">
+						<a href="https://twitter.com/bygeekdaniels" target="_blank" rel="noopener noreferrer">
 							<div className="single-social">
 								<h3 className="title">Twitter</h3>
 								<p className="info">I share my random thoughts here</p>

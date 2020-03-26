@@ -33,7 +33,7 @@ const Contact = () => (
                       </p>
                       <p className="text">
                         Not a fan of contact forms? Feel free to send me an
-                        email. I’ll tell you my email address in a second. <span class="text-warning">olufemidaniels07@gmail.com</span>
+                        email. I’ll tell you my email address in a second. <span class="text-warning">bygeekdaniels07@gmail.com</span>
                       </p>
                     </div>
                   </div>
