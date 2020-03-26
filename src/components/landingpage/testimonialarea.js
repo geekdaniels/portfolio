@@ -6,6 +6,8 @@ import "owl.carousel/dist/assets/owl.theme.default.css"
 
 import omotayo from "../../images/home1/omotayo.jpg"
 import stephen from "../../images/home1/stephen.jpg"
+import olajide from "../../images/home1/olajide.jpg"
+import lekan from "../../images/home1/lekan.jpg"
 
 const OwlCarousel = Loadable(() => import("react-owl-carousel"))
 
@@ -76,6 +78,38 @@ class Testimonial extends Component {
                     skills. He puts his heart into every task he executes.
                   </p>
                 </div>
+
+                <div className="single-testimonial">
+                  <div className="info">
+                    <div className="img">
+                      <img src={olajide} alt="olajide awoyinka | Olufemi greatest strength is developing fast website such that user doesn't have to wait or neglect your website. Olufemi Oladotun Daniel is a professional when it comes to web technologies." title="olajide awoyinka | Olufemi is a highly skilled web developer/web designer with great experience building beautiful and highly optimized website. Olufemi greatest strength is developing fast website such that user doesn't have to wait or neglect your website. Olufemi Oladotun Daniel is a professional when it comes to web technologies. " />
+                    </div>
+                    <div className="info-right">
+                      <h3 className="name">Olajide Awoyinka</h3>
+                      <p className="desg">Software Engineer</p>
+                    </div>
+                  </div>
+                  <p className="text">
+                  Olufemi is a highly skilled web developer/web designer with great experience building beautiful and highly optimized website. Olufemi's greatest strength is developing fast website such that users doesn't have to wait or neglect your website. Olufemi Oladotun Daniel is a professional. 
+                  </p>
+                </div>
+
+
+                <div className="single-testimonial">
+                  <div className="info">
+                    <div className="img">
+                      <img src={lekan} alt="Olamilekan Adeyemi | I worked with Daniel on projects. He has amazing UI skills and thinks outside of the box. He is an independent self-starter, but also a good team player. He will do the work to get things done in a timely fashion." title="Olamilekan Adeyemi | I worked with Daniel on projects. He has amazing UI skills and thinks outside of the box. He is an independent self-starter, but also a good team player. He will do the work to get things done in a timely fashion." />
+                    </div>
+                    <div className="info-right">
+                      <h3 className="name">Olamilekan Adeyemi</h3>
+                      <p className="desg">UI Designer (Remote) at MOTIFF</p>
+                    </div>
+                  </div>
+                  <p className="text">
+                  Olufemi is a highly skilled web developer/web designer with great experience building beautiful and highly optimized website. Olufemi's greatest strength is developing fast website such that users doesn't have to wait or neglect your website. Olufemi Oladotun Daniel is a professional. 
+                  </p>
+                </div>
+
                 <div className="single-testimonial">
                   <div className="info">
                     <div className="img">
