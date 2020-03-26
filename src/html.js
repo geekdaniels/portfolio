@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta name="google-site-verification" content="aTU4Un-jjdG4jQadkzUCB9E1JOU05d6GIKURDL9mvHQ" />
         
         <script defer
           src="https://code.jquery.com/jquery-3.3.1.min.js"
