@@ -4,9 +4,8 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 
 import Layout from "../components/layout"
-// import SEO from "../components/seo"
 import AboutMe from "../components/landingpage/aboutme"
-// import ServiceArea from "../components/landingpage/servicearea"
+import ServiceArea from "../components/landingpage/servicearea"
 // import ExperienceArea from "../components/landingpage/experience"
 // import ProjectArea from "../components/landingpage/projectarea"
 import Testimonial from "../components/landingpage/testimonialarea"
@@ -65,8 +64,8 @@ const IndexPage = () => {
                       for businesses
                     </h4>
 
-                    <Link to="/contact" class="link btn-style-1">
-                      Contact me
+                    <Link to="/services" class="link btn-style-1">
+                      View Services
                     </Link>
                   </div>
                 </div>
@@ -86,6 +85,7 @@ const IndexPage = () => {
       />
 
       <Testimonial />
+      <ServiceArea />
       <AboutMe />
 
       <section className="h2-about-area">

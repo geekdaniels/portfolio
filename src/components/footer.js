@@ -58,10 +58,19 @@ const Footer = () => (
                 <a href="#">CLIENTS</a>
               </li> */}
               <li>
-                <Link to="/about" href="#">About</Link>
+                <Link to="/services" activeClassName="active">
+                  Services
+                </Link>
               </li>
               <li>
-                <Link to="/privacy-policy">Privacy Policy</Link>
+                <Link to="/about" activeClassName="active">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy" activeClassName="active">
+                  Privacy Policy
+                </Link>
               </li>
             </ul>
           </div>

@@ -17,8 +17,8 @@ const AboutMe = () => (
         }
       `}
       render={data => (
-        <section className="h2-about-area social-area pt-4">
-          <div className="container">
+        <section className="h2-about-area social-area pt-5">
+          <div className="container mt-5">
             <div className="row">
               <div className="col-lg-5 col-12">
                 <div className="h2-about-banner">
@@ -61,9 +61,9 @@ const AboutMe = () => (
                     </span>
                     .
                   </p>
-                  {/* <Link to="/about" className="link btn-style-1 mt-5">
+                  <Link to="/about" className="link btn-style-1 mt-5">
                     Find out more about Daniel
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
             </div>

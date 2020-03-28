@@ -1,99 +1,91 @@
 import React from "react"
-import Service_1 from "../../images/home2/service-1.png"
-import Service_2 from "../../images/home2/service-1.png"
-import Service_3 from "../../images/home2/service-1.png"
-import Service_4 from "../../images/home2/service-1.png"
-import Service_5 from "../../images/home2/service-1.png"
-import Service_6 from "../../images/home2/service-1.png"
-
+import { Link } from "gatsby"
+import optomization from "../../images/optomization.png"
+import web_development from "../../images/web_development.png"
 
 const ServiceArea = () => (
   <>
-		
-		<section className="h2-service-area">
-			<div className="container">
-				<div className="row">
-					<div className="col-lg-5 col-12">
-						<div className="section-title">
-							<p className="intro">we provide</p>
-							<h2 className="title">Services</h2>
-							<p className="text">I made nine prototypes to understand family needs better and redesigned the iOS and Android apps.</p>
-						</div>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-lg-4 col-sm-6 col-12">
-						<div className="h2-single-service">
-							<div className="icon-box">
-								<span className="icon"><img src={Service_1} alt="" /></span>
-							</div>
-							<div className="content">
-								<h4 className="title">Business Strategy</h4>
-								<p className="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
-							</div>
-						</div>
-					</div>
-					<div className="col-lg-4 col-sm-6 col-12">
-						<div className="h2-single-service">
-							<div className="icon-box">
-								<span className="icon"><img src={Service_2} alt="" /></span>
-							</div>
-							<div className="content">
-								<h4 className="title">Brand Strategy</h4>
-								<p className="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
-							</div>
-						</div>
-					</div>
-					<div className="col-lg-4 col-sm-6 col-12">
-						<div className="h2-single-service">
-							<div className="icon-box">
-								<span className="icon"><img src={Service_3} alt="" /></span>
-							</div>
-							<div className="content">
-								<h4 className="title">Visual Design</h4>
-								<p className="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
-							</div>
-						</div>
-					</div>
-					<div className="col-lg-4 col-sm-6 col-12">
-						<div className="h2-single-service">
-							<div className="icon-box">
-								<span className="icon"><img src={Service_4} alt="" /></span>
-							</div>
-							<div className="content">
-								<h4 className="title">Product Design</h4>
-								<p className="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
-							</div>
-						</div>
-					</div>
-					<div className="col-lg-4 col-sm-6 col-12">
-						<div className="h2-single-service">
-							<div className="icon-box">
-								<span className="icon"><img src={Service_5} alt="" /></span>
-							</div>
-							<div className="content">
-								<h4 className="title">Interactive Design</h4>
-								<p className="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
-							</div>
-						</div>
-					</div>
-					<div className="col-lg-4 col-sm-6 col-12">
-						<div className="h2-single-service">
-							<div className="icon-box">
-								<span className="icon"><img src={Service_6} alt="" /></span>
-							</div>
-							<div className="content">
-								<h4 className="title">Motion Graphic</h4>
-								<p className="text">Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	
-		
+    <section className="h2-service-area">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-5 col-12">
+            <div className="section-title">
+              <h2 className="title">Services I provide</h2>
+              {/* <p className="text">
+                I made nine prototypes to understand family needs better and
+                redesigned the iOS and Android apps.
+              </p> */}
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-6 col-sm-6 col-12">
+            <div className="h2-single-service h-100">
+              <div className="text-center">
+                <img
+                  src={optomization}
+                  alt="Website Review and Optimization"
+                  className="img-fluid"
+                  width="280"
+                />
+              </div>
+              <div className="content text-center">
+                <h4 className="title mt-4">Website Review and Optimization</h4>
 
+                <p className="text">
+                  If your website makes you cringe and your prospects leave your
+                  website without getting in touch, I can help.
+                </p>
+
+                <p className="text">
+                  I’ll review your website and give you ultra-actionable and
+                  easy-to-implement suggestions that will help you improve your
+                  homepage and impress your prospects.
+                </p>
+
+                <Link to="/contact" className="link btn-style-1 mt-5">
+                  Request Review
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-6 col-sm-6 col-12">
+            <div className="h2-single-service h-100">
+              <div className="text-center">
+                <img
+                  src={web_development}
+                  alt="Website Development"
+                  width="300"
+                />
+              </div>
+              <div className="content text-center">
+                <h4 className="title mt-4">Website Development</h4>
+                <p className="text">
+                  Are you in need of a business website that will generate sales
+                  and leads for you.
+                </p>
+
+                <p className="text">
+                  Are you feed up of how slow your website is and you need a
+                  super fast website to improve your visitor's experience?
+                </p>
+
+                <p className="text">
+                  You're in the right place. I create websites that are not just
+                  fast, but structured and designed to generate sales and get
+                  you leeds.
+                </p>
+
+                <Link to="/contact" className="link btn-style-1 mt-5">
+                  Request Web design
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </>
 )
 
