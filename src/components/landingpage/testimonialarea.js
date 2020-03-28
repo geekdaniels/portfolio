@@ -61,6 +61,7 @@ class Testimonial extends Component {
                     problem-solving prowess, He is a man of great character."
                         title="Omotayo Olaiya | Much more than Daniel Olufemi's adeptness and resilient
                     problem-solving prowess, He is a man of great character."
+                    loading="lazy"
                       />
                     </div>
                     <div className="info-right">
@@ -82,7 +83,7 @@ class Testimonial extends Component {
                 <div className="single-testimonial">
                   <div className="info">
                     <div className="img">
-                      <img src={olajide} alt="olajide awoyinka | Olufemi greatest strength is developing fast website such that user doesn't have to wait or neglect your website. Olufemi Oladotun Daniel is a professional when it comes to web technologies." title="olajide awoyinka | Olufemi is a highly skilled web developer/web designer with great experience building beautiful and highly optimized website. Olufemi greatest strength is developing fast website such that user doesn't have to wait or neglect your website. Olufemi Oladotun Daniel is a professional when it comes to web technologies. " />
+                      <img src={olajide} loading="lazy" alt="olajide awoyinka | Olufemi greatest strength is developing fast website such that user doesn't have to wait or neglect your website. Olufemi Oladotun Daniel is a professional when it comes to web technologies." title="olajide awoyinka | Olufemi is a highly skilled web developer/web designer with great experience building beautiful and highly optimized website. Olufemi greatest strength is developing fast website such that user doesn't have to wait or neglect your website. Olufemi Oladotun Daniel is a professional when it comes to web technologies. " />
                     </div>
                     <div className="info-right">
                       <h3 className="name">Olajide Awoyinka</h3>
@@ -98,7 +99,7 @@ class Testimonial extends Component {
                 <div className="single-testimonial">
                   <div className="info">
                     <div className="img">
-                      <img src={lekan} alt="Olamilekan Adeyemi | I worked with Daniel on projects. He has amazing UI skills and thinks outside of the box. He is an independent self-starter, but also a good team player. He will do the work to get things done in a timely fashion." title="Olamilekan Adeyemi | I worked with Daniel on projects. He has amazing UI skills and thinks outside of the box. He is an independent self-starter, but also a good team player. He will do the work to get things done in a timely fashion." />
+                      <img src={lekan} loading="lazy" alt="Olamilekan Adeyemi | I worked with Daniel on projects. He has amazing UI skills and thinks outside of the box. He is an independent self-starter, but also a good team player. He will do the work to get things done in a timely fashion." title="Olamilekan Adeyemi | I worked with Daniel on projects. He has amazing UI skills and thinks outside of the box. He is an independent self-starter, but also a good team player. He will do the work to get things done in a timely fashion." />
                     </div>
                     <div className="info-right">
                       <h3 className="name">Olamilekan Adeyemi</h3>
@@ -113,7 +114,7 @@ class Testimonial extends Component {
                 <div className="single-testimonial">
                   <div className="info">
                     <div className="img">
-                      <img src={stephen} alt="Stephen Enunwah | Elite Developer, Goal Driven ... you can be sure of results
+                      <img src={stephen} loading="lazy" alt="Stephen Enunwah | Elite Developer, Goal Driven ... you can be sure of results
                     while working with Olufemi Oladotun Daniel" title="Stephen Enunwah | Elite Developer, Goal Driven ... you can be sure of results
                     while working with Olufemi Oladotun Daniel" />
                     </div>
@@ -127,42 +128,6 @@ class Testimonial extends Component {
                     while working with "Olufemi Oladotun Daniel"
                   </p>
                 </div>
-                {/* <div className="single-testimonial">
-                  <div className="info">
-                    <div className="img">
-                      <img src={Element_1} alt="" />
-                    </div>
-                    <div className="info-right">
-                      <h3 className="name">Martha Sandoval</h3>
-                      <p className="desg">Product Designer at CodeNext</p>
-                    </div>
-                  </div>
-                  <p className="text">
-                    We are motivated by the satisfaction of our clients. Put
-                    your trust in us and share in our growth Asset Management is
-                    made up of a team of expert, committed and experienced
-                    people with a passion for financial markets. Our goal is to
-                    achieve continuous and sustainable growth of our clients.
-                  </p>
-                </div> */}
-                {/* <div className="single-testimonial">
-                  <div className="info">
-                    <div className="img">
-                      <img src={Element_2} alt="" />
-                    </div>
-                    <div className="info-right">
-                      <h3 className="name">Mildred Meyer</h3>
-                      <p className="desg">Product Designer at CodeNext</p>
-                    </div>
-                  </div>
-                  <p className="text">
-                    We are motivated by the satisfaction of our clients. Put
-                    your trust in us and share in our growth Asset Management is
-                    made up of a team of expert, committed and experienced
-                    people with a passion for financial markets. Our goal is to
-                    achieve continuous and sustainable growth of our clients.
-                  </p>
-                </div> */}
               </OwlCarousel>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link, StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout";
 import ServiceArea from "../components/landingpage/servicearea"
 

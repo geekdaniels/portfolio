@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import optomization from "../../images/optomization.png"
+import optimization from "../../images/optomization.png"
 import web_development from "../../images/web_development.png"
 
 const ServiceArea = () => (
@@ -19,14 +19,15 @@ const ServiceArea = () => (
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-6 col-sm-6 col-12">
+          <div className="col-lg-6 col-sm-6 col-12 my-3">
             <div className="h2-single-service h-100">
               <div className="text-center">
                 <img
-                  src={optomization}
+                  src={optimization}
                   alt="Website Review and Optimization"
                   className="img-fluid"
-                  width="280"
+				  width="280"
+				  loading="lazy"
                 />
               </div>
               <div className="content text-center">
@@ -50,13 +51,14 @@ const ServiceArea = () => (
             </div>
           </div>
 
-          <div className="col-lg-6 col-sm-6 col-12">
+          <div className="col-lg-6 col-sm-6 col-12 my-3">
             <div className="h2-single-service h-100">
               <div className="text-center">
                 <img
                   src={web_development}
                   alt="Website Development"
-                  width="300"
+				  width="300"
+				  loading="lazy"
                 />
               </div>
               <div className="content text-center">
