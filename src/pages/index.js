@@ -19,7 +19,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="Olufemi Oladotun Daniel - Web designer & Web developer"
+        title="Olufemi Oladotun - Web designer | Web developer in Lagos"
         desc="I am Olufemi Oladotun Daniel, a Web designer & Web developer experienced in developing super fast websites that generate leads and bring sales."
       />
 
