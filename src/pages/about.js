@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 const About = () => (
   <Layout>
     <SEO
-      title="About Olufemi Oladotun Daniel"
+      title="About Olufemi Oladotun Daniel | Web designer"
       desc="I'm Olufemi Oladotun. I turn under performing small business websites into fast and beautiful lead-generating machines."
     />
 

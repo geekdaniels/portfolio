@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 const Design = () => (
   <Layout>
     <SEO
-      title="Services | Olufemi Oladotun Daniel"
+      title="Services | Olufemi Oladotun Daniel a Web designer & Web developer"
       desc="I'll help you find out why your website is slow, and isn’t
       bringing sales. Help fix your website design so it brings more sales."
     />

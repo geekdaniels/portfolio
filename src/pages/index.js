@@ -19,8 +19,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="Olufemi Oladotun Daniel - Web Optimization Specialist"
-        desc="I am Olufemi Oladotun Daniel, a web optimization specialist experienced in developing super fast websites that generate leads and bring sales."
+        title="Olufemi Oladotun Daniel - Web designer & Web developer"
+        desc="I am Olufemi Oladotun Daniel, a Web designer & Web developer experienced in developing super fast websites that generate leads and bring sales."
       />
 
       <StaticQuery
@@ -57,11 +57,11 @@ const IndexPage = () => {
                 <div className="col-lg-7 col-12">
                   <div className="hero-content text-left">
                     <h1 className="title">
-                      Get Super fast websites that bring sales and gain
+                      Giving you Super fast websites that bring sales and gain
                       customers.
                     </h1>
                     <h4 className="sub_title mt-lg-2 mb-2 text-white">
-                      for businesses
+                      to scale up your business
                     </h4>
 
                     <Link to="/services" class="link btn-style-1">
