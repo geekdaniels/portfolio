@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 
 import { Link, graphql, useStaticQuery } from "gatsby"
 
@@ -51,8 +52,13 @@ const FeaturedBlog = () => {
               <div className="single-related-article">
                 <div className="img">
                   <Link to={`/blog/${edge.node.slug}`}>
-                    <img
+                    {/* <img
                       src={edge.node.featuredImage.fluid.src}
+                      alt={edge.node.title}
+                      loading="lazy"
+                    /> */}
+                     <Img
+                      fluid={edge.node.featuredImage.fluid}
                       alt={edge.node.title}
                     />
                   </Link>

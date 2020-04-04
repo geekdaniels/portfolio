@@ -24,10 +24,10 @@ const ServiceArea = () => (
               <div className="text-center">
                 <img
                   src={optimization}
+                  loading="lazy"
                   alt="Website Review and Optimization"
                   className="img-fluid"
                   width="280"
-                  loading="lazy"
                 />
               </div>
               <div className="content text-center">
@@ -56,9 +56,9 @@ const ServiceArea = () => (
               <div className="text-center">
                 <img
                   src={web_development}
+                  loading="lazy"
                   alt="Website Development"
                   width="300"
-                  loading="lazy"
                 />
               </div>
               <div className="content text-center">

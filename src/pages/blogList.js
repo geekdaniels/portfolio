@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -31,8 +32,8 @@ const BlogList = props => {
                       <div className="single-related-article">
                         <div className="img">
                           <Link to={`/blog/${edge.node.slug}`}>
-                            <img
-                              src={edge.node.featuredImage.fluid.src}
+                            <Img
+                              fluid={edge.node.featuredImage.fluid}
                               alt={edge.node.title}
                             />
                           </Link>

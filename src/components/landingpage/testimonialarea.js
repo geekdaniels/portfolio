@@ -57,11 +57,12 @@ class Testimonial extends Component {
                     <div className="img">
                       <img
                         src={omotayo}
+                        loading="lazy"
                         alt="Omotayo Olaiya | Much more than Daniel Olufemi's adeptness and resilient
                     problem-solving prowess, He is a man of great character."
                         title="Omotayo Olaiya | Much more than Daniel Olufemi's adeptness and resilient
                     problem-solving prowess, He is a man of great character."
-                    loading="lazy"
+                    
                       />
                     </div>
                     <div className="info-right">

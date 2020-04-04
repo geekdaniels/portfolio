@@ -68,7 +68,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    // 'gatsby-plugin-sitemap',
+    'gatsby-plugin-sitemap',
     {
       resolve: "gatsby-plugin-manifest",
       options: {

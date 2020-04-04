@@ -1,5 +1,5 @@
 import React from "react"
-
+import Img from "gatsby-image"
 import { graphql } from "gatsby"
 
 import SEO from "../components/seo"
@@ -47,7 +47,7 @@ const BlogTemplate = props => {
     <Layout>
       <SEO
         title={props.data.contentfulBlog.seoTitle}
-        description={props.data.contentfulBlog.seoDescription}
+        desc={props.data.contentfulBlog.seoDescription}
         banner={props.data.contentfulBlog.featuredImage.fluid.src}
         article
         pathname={`/blog/${props.data.contentfulBlog.slug}`}
@@ -113,8 +113,8 @@ const BlogTemplate = props => {
             <div className="col-lg-10 offset-lg-1 col-12">
               <div className="sbpa-content">
                 <div class="img">
-                  <img
-                    src={props.data.contentfulBlog.featuredImage.fluid.src}
+                  <Img
+                    fluid={props.data.contentfulBlog.featuredImage.fluid}
                     alt={props.data.contentfulBlog.title}
                   />
                 </div>
