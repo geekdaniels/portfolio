@@ -5,7 +5,7 @@ import web_development from "../../images/web_development.png"
 
 const ServiceArea = () => (
   <>
-    <section className="h2-service-area">
+    <section className="h2-service-area pt-5">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-12">
@@ -26,8 +26,8 @@ const ServiceArea = () => (
                   src={optimization}
                   alt="Website Review and Optimization"
                   className="img-fluid"
-				  width="280"
-				  loading="lazy"
+                  width="280"
+                  loading="lazy"
                 />
               </div>
               <div className="content text-center">
@@ -57,8 +57,8 @@ const ServiceArea = () => (
                 <img
                   src={web_development}
                   alt="Website Development"
-				  width="300"
-				  loading="lazy"
+                  width="300"
+                  loading="lazy"
                 />
               </div>
               <div className="content text-center">

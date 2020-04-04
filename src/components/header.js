@@ -76,7 +76,7 @@ class Header extends React.Component {
                     </Link>
                   </li>
 
-                  <li className="d-none">
+                  <li className="">
                     <Link
                       to="/blog"
                       activeClassName="active"

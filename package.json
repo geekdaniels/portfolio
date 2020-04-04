@@ -1,5 +1,5 @@
 {
-  "name": "Olufemi_Oladotun_Daniel",
+  "name": "olufemi-oladotun-daniel",
   "private": true,
   "description": "Website for Olufemi Oladotun Daniel - Web designer & developer Based in Lagos, Nigeria ",
   "version": "0.1.0",
@@ -13,7 +13,10 @@
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sharp": "^2.4.0",
+    "gatsby-remark-reading-time": "^1.1.0",
+    "gatsby-source-contentful": "^2.2.6",
     "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.3.13",
     "netlify-push-webpack-plugin": "^1.1.0",
     "prop-types": "^15.7.2",

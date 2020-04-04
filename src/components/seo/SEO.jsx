@@ -1,13 +1,13 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
-import Facebook from './Facebook'
-import Twitter from './Twitter'
+import React from "react"
+import Helmet from "react-helmet"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+import Facebook from "./Facebook"
+import Twitter from "./Twitter"
 
 // Complete tutorial: https://www.gatsbyjs.org/docs/add-seo-component/
 
-const SEO = ({ title, desc, banner, pathname, article, node }) => {
+const SEO = ({ title, desc, banner, pathname, article, publication_date , modification_date }) => {
   const { site } = useStaticQuery(query)
 
   const {
@@ -29,8 +29,8 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
   const seo = {
     title: title || defaultTitle,
     description: desc || defaultDescription,
-    image: `${siteUrl}${banner || defaultBanner}`,
-    url: `${siteUrl}${pathname || ''}`,
+    image: banner || `${siteUrl}${defaultBanner}`,
+    url: `${siteUrl}${pathname || ""}`,
   }
 
   // schema.org in JSONLD format
@@ -38,8 +38,8 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
   // You can fill out the 'author', 'creator' with more data or another type (e.g. 'Organization')
 
   const schemaOrgWebPage = {
-    '@context': 'http://schema.org',
-    '@type': 'WebPage',
+    "@context": "http://schema.org",
+    "@type": "WebPage",
     url: siteUrl,
     headline,
     inLanguage: siteLanguage,
@@ -47,101 +47,101 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
     description: defaultDescription,
     name: defaultTitle,
     author: {
-      '@type': 'Person',
+      "@type": "Person",
       name: author,
     },
     copyrightHolder: {
-      '@type': 'Person',
+      "@type": "Person",
       name: author,
     },
-    copyrightYear: '2019',
+    copyrightYear: "2020",
     creator: {
-      '@type': 'Person',
+      "@type": "Person",
       name: author,
     },
     publisher: {
-      '@type': 'Person',
+      "@type": "Person",
       name: author,
     },
-    datePublished: '2020-01-18T10:30:00+01:00',
+    datePublished: "2020-01-18T10:30:00+01:00",
     dateModified: buildTime,
     image: {
-      '@type': 'ImageObject',
+      "@type": "ImageObject",
       url: `${siteUrl}${defaultBanner}`,
     },
   }
 
   // Initial breadcrumb list
 
-  // const itemListElement = [
-  //   {
-  //     '@type': 'ListItem',
-  //     item: {
-  //       '@id': siteUrl,
-  //       name: 'Homepage',
-  //     },
-  //     position: 1,
-  //   },
-  // ]
+  const itemListElement = [
+    {
+      "@type": "ListItem",
+      item: {
+        "@id": siteUrl,
+        name: "Homepage",
+      },
+      position: 1,
+    },
+  ]
 
   let schemaArticle = null
 
-  // if (article) {
-  //   schemaArticle = {
-  //     '@context': 'http://schema.org',
-  //     '@type': 'Article',
-  //     author: {
-  //       '@type': 'Person',
-  //       name: author,
-  //     },
-  //     copyrightHolder: {
-  //       '@type': 'Person',
-  //       name: author,
-  //     },
-  //     copyrightYear: '2019',
-  //     creator: {
-  //       '@type': 'Person',
-  //       name: author,
-  //     },
-  //     publisher: {
-  //       '@type': 'Organization',
-  //       name: author,
-  //       logo: {
-  //         '@type': 'ImageObject',
-  //         url: `${siteUrl}${defaultBanner}`,
-  //       },
-  //     },
-  //     datePublished: node.first_publication_date,
-  //     dateModified: node.last_publication_date,
-  //     description: seo.description,
-  //     headline: seo.title,
-  //     inLanguage: siteLanguage,
-  //     url: seo.url,
-  //     name: seo.title,
-  //     image: {
-  //       '@type': 'ImageObject',
-  //       url: seo.image,
-  //     },
-  //     mainEntityOfPage: seo.url,
-  //   }
+  if (article) {
+    schemaArticle = {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      author: {
+        "@type": "Person",
+        name: author,
+      },
+      copyrightHolder: {
+        "@type": "Person",
+        name: author,
+      },
+      copyrightYear: "2020",
+      creator: {
+        "@type": "Person",
+        name: author,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: author,
+        logo: {
+          "@type": "ImageObject",
+          url: `${siteUrl}${defaultBanner}`,
+        },
+      },
+      datePublished: publication_date,
+      dateModified: modification_date,
+      description: seo.description,
+      headline: seo.title,
+      inLanguage: siteLanguage,
+      url: seo.url,
+      name: seo.title,
+      image: {
+        "@type": "ImageObject",
+        url: seo.image,
+      },
+      mainEntityOfPage: seo.url,
+    }
     // Push current blogpost into breadcrumb list
-  //   itemListElement.push({
-  //     '@type': 'ListItem',
-  //     item: {
-  //       '@id': seo.url,
-  //       name: seo.title,
-  //     },
-  //     position: 2,
-  //   })
-  // }
+    itemListElement.push({
+      "@type": "ListItem",
+      item: {
+        "@id": seo.url,
+        name: seo.title,
+      },
+      position: 2,
+    })
+  }
 
-  // const breadcrumb = {
-  //   '@context': 'http://schema.org',
-  //   '@type': 'BreadcrumbList',
-  //   description: 'Breadcrumbs list',
-  //   name: 'Breadcrumbs',
-  //   itemListElement,
-  // }
+  const breadcrumb = {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    description: "Breadcrumbs list",
+    name: "Breadcrumbs",
+    itemListElement,
+  }
 
   return (
     <>
@@ -149,22 +149,38 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
         <html lang={siteLanguage} />
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
-        <meta name="keywords" content="Olufemi oladotun Daniel, web optimzation specialist, Olufemi oladotun, Olufemi Daniel, UI Design, web design lagos, UX design lagos,  UX Designer Nigeria, front-end developer, front-end designer, web designer, User Experience, UX designer, User Interface, UI designer, Mobile app Design, web design Nigeria, web design lagos, Nigeria web designer, website design nigeria, e-commerce website, website development in Nigeria" />
+        <meta
+          name="keywords"
+          content="Olufemi oladotun Daniel, web optimzation specialist, Olufemi oladotun, Olufemi Daniel, UI Design, web design lagos, UX design lagos,  UX Designer Nigeria, front-end developer, front-end designer, web designer, User Experience, UX designer, User Interface, UI designer, Mobile app Design, web design Nigeria, web design lagos, Nigeria web designer, website design nigeria, e-commerce website, website development in Nigeria"
+        />
         {/* Insert schema.org data conditionally (webpage/article) + everytime (breadcrumbs) */}
-        {!article && <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>}
-        {article && <script type="application/ld+json">{JSON.stringify(schemaArticle)}</script>}
-        {/* <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script> */}
+        {!article && (
+          <script type="application/ld+json">
+            {JSON.stringify(schemaOrgWebPage)}
+          </script>
+        )}
+        {article && (
+          <script type="application/ld+json">
+            {JSON.stringify(schemaArticle)}
+          </script>
+        )}
+        <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       </Helmet>
       <Facebook
         desc={seo.description}
         image={seo.image}
         title={seo.title}
-        type={article ? 'article' : 'website'}
+        type={article ? "article" : "website"}
         url={seo.url}
         locale={ogLanguage}
         name={facebook}
       />
-      <Twitter title={seo.title} image={seo.image} desc={seo.description} username={twitter} />
+      <Twitter
+        title={seo.title}
+        image={seo.image}
+        desc={seo.description}
+        username={twitter}
+      />
     </>
   )
 }
