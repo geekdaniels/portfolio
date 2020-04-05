@@ -19,20 +19,6 @@ class Header extends React.Component {
     document.getElementById("hamburger").addEventListener("click", e => {
       this.setState({ isTop: true });
     })
-
-    // var hamburger =
-
-    // console.log("hamburger :", hamburger)
-    // if (hamburger.length > 0) {
-    //   // hamburger.addEventListener(
-    //   //   "click",
-    //   //   function() {
-    //   //     this.classList.toggle("is-active")
-    //   //   },
-    //   //   false
-    //   // )
-
-    // }
   }
 
   render() {
@@ -68,7 +54,7 @@ class Header extends React.Component {
                   <img
                     src={data.logo.childImageSharp.fluid.src}
                     alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
-                    width="120"
+                    width="180"
                   />
                 )}
               />
