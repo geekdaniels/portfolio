@@ -13,9 +13,9 @@ export default function HTML(props) {
         />
         <meta name="google-site-verification" content="aTU4Un-jjdG4jQadkzUCB9E1JOU05d6GIKURDL9mvHQ" />
         
-        <script defer
-          src="https://code.jquery.com/jquery-3.3.1.min.js"
-        />
+        <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"/>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"/>
+
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

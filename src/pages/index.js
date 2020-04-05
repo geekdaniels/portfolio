@@ -77,7 +77,7 @@ const IndexPage = () => {
                       to scale up your business
                     </h4>
 
-                    <Link to="/services" class="link btn-style-1 mt-5">
+                    <Link to="/services" className="link btn-style-1 mt-5">
                       View Services
                     </Link>
                   </div>

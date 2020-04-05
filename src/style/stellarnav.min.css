@@ -605,7 +605,7 @@ body.stellarnav-noscroll-x {
 
     .stellarnav ul {
         position: relative;
-        display: none
+        /* display: none */
     }
 }
 
