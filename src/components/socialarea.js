@@ -62,7 +62,7 @@ const SocialArea = () => (
 					</div>
 
 					<div className="col-lg-4 col-sm-6 col-12">
-						<a href="https://wa.me/08145358784/?text=Hi%20Daniel" target="_blank" rel="noopener noreferrer">
+						<a href="https://wa.me/+2348145358784/?text=Hi%20Daniel" target="_blank" rel="noopener noreferrer">
 							<div className="single-social">
 								<h3 className="title">Whatsapp Me</h3>
 								<p className="info">Let's talk on whatsapp</p>

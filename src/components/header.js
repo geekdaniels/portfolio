@@ -23,14 +23,14 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header>
-        <div className="container">
+      <header className={
+        this.state.isTop
+          ? "navbar-fixed-top"
+          : ""
+      }>
+        <div>
           <nav
-            className={
-              this.state.isTop
-                ? "navbar-fixed-top navbar navbar-expand-lg navbar-dark py-md-0 fixed-top px-lg-5"
-                : "navbar navbar-expand-lg navbar-lidarkght py-md-0 fixed-top px-lg-5"
-            }
+            className="container navbar navbar-expand-lg navbar-dark py-md-0"
           >
             <Link
               to="/"
