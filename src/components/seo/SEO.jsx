@@ -3,11 +3,20 @@ import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Facebook from "./Facebook"
+import Article from "./Article"
 import Twitter from "./Twitter"
 
 // Complete tutorial: https://www.gatsbyjs.org/docs/add-seo-component/
 
-const SEO = ({ title, desc, banner, pathname, article, publication_date , modification_date }) => {
+const SEO = ({
+  title,
+  desc,
+  banner,
+  pathname,
+  article,
+  publication_date,
+  modification_date,
+}) => {
   const { site } = useStaticQuery(query)
 
   const {
@@ -89,7 +98,7 @@ const SEO = ({ title, desc, banner, pathname, article, publication_date , modifi
   if (article) {
     schemaArticle = {
       "@context": "http://schema.org",
-      "@type": "Article",
+      "@type": "WebSite",
       author: {
         "@type": "Person",
         name: author,
@@ -123,7 +132,22 @@ const SEO = ({ title, desc, banner, pathname, article, publication_date , modifi
         url: seo.image,
       },
       mainEntityOfPage: seo.url,
+
+      "@type": "WebPage",
+      "@id": `${seo.url}#webpage`,
+      url: seo.url,
+      name: seo.title,
+      isPartOf: { "@id": "https://olufemioladotun.com/#website" },
+      inLanguage: "en-US",
+      datePublished: publication_date,
+      dateModified: modification_date,
+      author: {
+        "@type": "Person",
+        name: author,
+      },
+      description: seo.description,
     }
+
     // Push current blogpost into breadcrumb list
     itemListElement.push({
       "@type": "ListItem",
@@ -166,6 +190,14 @@ const SEO = ({ title, desc, banner, pathname, article, publication_date , modifi
         )}
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       </Helmet>
+
+      {article && (
+        <Article
+          publication_date={publication_date}
+          modification_date={modification_date}
+        />
+      )}
+
       <Facebook
         desc={seo.description}
         image={seo.image}
@@ -175,6 +207,7 @@ const SEO = ({ title, desc, banner, pathname, article, publication_date , modifi
         locale={ogLanguage}
         name={facebook}
       />
+
       <Twitter
         title={seo.title}
         image={seo.image}
