@@ -190,6 +190,7 @@ const SEO = ({
       />
 
       <Twitter
+        type="summary_large_image"
         title={seo.title}
         image={seo.image}
         desc={seo.description}
