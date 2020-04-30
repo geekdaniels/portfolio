@@ -133,19 +133,10 @@ const SEO = ({
       },
       mainEntityOfPage: seo.url,
 
-      "@type": "WebPage",
-      "@id": `${seo.url}#webpage`,
+      "@id": `${seo.url}/#webpage`,
       url: seo.url,
       name: seo.title,
       isPartOf: { "@id": "https://olufemioladotun.com/#website" },
-      inLanguage: "en-US",
-      datePublished: publication_date,
-      dateModified: modification_date,
-      author: {
-        "@type": "Person",
-        name: author,
-      },
-      description: seo.description,
     }
 
     // Push current blogpost into breadcrumb list
