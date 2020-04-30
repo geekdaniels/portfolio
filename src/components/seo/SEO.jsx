@@ -99,6 +99,12 @@ const SEO = ({
     schemaArticle = {
       "@context": "http://schema.org",
       "@type": "WebSite",
+      url: seo.url,
+      headline: seo.title,
+      inLanguage: siteLanguage,
+      mainEntityOfPage: seo.url,
+      description: seo.description,
+      name: seo.title,
       author: {
         "@type": "Person",
         name: author,
@@ -122,16 +128,10 @@ const SEO = ({
       },
       datePublished: publication_date,
       dateModified: modification_date,
-      description: seo.description,
-      headline: seo.title,
-      inLanguage: siteLanguage,
-      url: seo.url,
-      name: seo.title,
       image: {
         "@type": "ImageObject",
         url: seo.image,
       },
-      mainEntityOfPage: seo.url,
 
       "@id": `${seo.url}/#webpage`,
       url: seo.url,
