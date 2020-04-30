@@ -102,9 +102,14 @@ const SEO = ({
       url: seo.url,
       headline: seo.title,
       inLanguage: siteLanguage,
-      mainEntityOfPage: seo.url,
       description: seo.description,
       name: seo.title,
+      image: {
+        "@type": "ImageObject",
+        url: seo.image,
+        width: 1130,
+        height: 484,
+      },
       author: {
         "@type": "Person",
         name: author,
@@ -118,27 +123,10 @@ const SEO = ({
         "@type": "Person",
         name: author,
       },
-      publisher: {
-        "@type": "Organization",
-        name: author,
-        logo: {
-          "@type": "ImageObject",
-          url: `${siteUrl}${defaultBanner}`,
-        },
-      },
       datePublished: publication_date,
       dateModified: modification_date,
-      image: {
-        "@type": "ImageObject",
-        url: seo.image,
-        width: 1130,
-        height: 484,
-      },
 
       "@id": `${seo.url}/#webpage`,
-      url: seo.url,
-      name: seo.title,
-      isPartOf: { "@id": "https://olufemioladotun.com/#website" },
     }
 
     // Push current blogpost into breadcrumb list
