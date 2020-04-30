@@ -131,6 +131,8 @@ const SEO = ({
       image: {
         "@type": "ImageObject",
         url: seo.image,
+        width: 1130,
+        height: 484,
       },
 
       "@id": `${seo.url}/#webpage`,
