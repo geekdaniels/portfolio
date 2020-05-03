@@ -106,7 +106,7 @@ const SEO = ({
       name: seo.title,
       image: {
         "@type": "ImageObject",
-        url: seo.image,
+        url: `https:${seo.image}`,
         width: 1130,
         height: 484,
       },
@@ -153,7 +153,7 @@ const SEO = ({
       <Helmet title={seo.title}>
         <html lang={siteLanguage} />
         <meta name="description" content={seo.description} />
-        <meta name="image" content={seo.image} />
+        <meta name="image" content={`https:${seo.image}`} />
         <meta
           name="keywords"
           content="Olufemi oladotun Daniel, web optimzation specialist, Olufemi oladotun, Olufemi Daniel, UI Design, web design lagos, UX design lagos,  UX Designer Nigeria, front-end developer, front-end designer, web designer, User Experience, UX designer, User Interface, UI designer, Mobile app Design, web design Nigeria, web design lagos, Nigeria web designer, website design nigeria, e-commerce website, website development in Nigeria"
@@ -192,7 +192,7 @@ const SEO = ({
       <Twitter
         type="summary_large_image"
         title={seo.title}
-        image={seo.image}
+        image={`https:${seo.image}`}
         desc={seo.description}
         username={twitter}
       />

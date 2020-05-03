@@ -44,9 +44,12 @@ const ServiceArea = () => (
                   homepage and impress your prospects.
                 </p>
 
-                <Link to="/contact" className="link btn-style-1 mt-5">
+                <a
+                  href="https://calendly.com/olufemidaniel/consultation"
+                  className="link btn-style-1 mt-5"
+                >
                   Request Review
-                </Link>
+                </a>
               </div>
             </div>
           </div>
