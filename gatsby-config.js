@@ -68,7 +68,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -80,6 +80,12 @@ module.exports = {
         theme_color: website.themeColor,
         display: "minimal-ui",
         icon: website.favicon,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `olufemioladotun`,
       },
     },
     // {

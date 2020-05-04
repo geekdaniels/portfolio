@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
+import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 
 import SEO from "../components/seo"
 
@@ -43,6 +44,11 @@ export const query = graphql`
 `
 
 const BlogTemplate = props => {
+  let disqusConfig = {
+    url: `https://www.olufemioladotun.com/blog/${props.data.contentfulBlog.slug}`,
+    identifier: props.data.contentfulBlog.id,
+    title: props.data.contentfulBlog.title,
+  }
   return (
     <Layout>
       <SEO
@@ -123,6 +129,8 @@ const BlogTemplate = props => {
                     __html: `${props.data.contentfulBlog.content.childMarkdownRemark.html}`,
                   }}
                 ></div>
+                <CommentCount config={disqusConfig} />
+                <Disqus config={disqusConfig} />
               </div>
             </div>
           </div>
