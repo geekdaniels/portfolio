@@ -59,7 +59,7 @@ exports.createPages = ({ actions, graphql }) => {
       // console.log("MIKA node", node)
 
       createPage({
-        path: `blog/${node.slug}/`,
+        path: `blog/${node.slug}`,
         component: path.resolve("./src/templates/blog.js"),
         context: {
           id: node.id,

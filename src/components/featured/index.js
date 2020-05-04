@@ -51,7 +51,7 @@ const FeaturedBlog = () => {
             <div key={edge.node.id} className="col-lg-4 col-sm-6 col-12">
               <div className="single-related-article">
                 <div className="img">
-                  <Link to={`/blog/${edge.node.slug}`}>
+                  <Link to={`/blog/${edge.node.slug}/`}>
                     {/* <img
                       src={edge.node.featuredImage.fluid.src}
                       alt={edge.node.title}
