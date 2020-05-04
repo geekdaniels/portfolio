@@ -2,7 +2,6 @@ import React from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { Disqus, CommentCount } from "gatsby-plugin-disqus"
-
 import SEO from "../components/seo"
 
 import Layout from "../components/layout"
@@ -93,7 +92,14 @@ const BlogTemplate = props => {
                   </div>
                   <div className="iha-meta-box">
                     <p className="title">SHARE</p>
-                    <p className="info">Facebook</p>
+
+                    <a
+                      href={`https://www.facebook.com/sharer/sharer.php?u=https://www.olufemioladotun.com/blog/${props.data.contentfulBlog.slug}`}
+                      className="info"
+                      target="_blank"
+                    >
+                      Facebook
+                    </a>
                   </div>
                   <div className="iha-meta-box">
                     <p className="title">
