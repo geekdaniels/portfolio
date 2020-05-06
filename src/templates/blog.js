@@ -5,6 +5,7 @@ import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import SEO from "../components/seo"
 
 import Layout from "../components/layout"
+import Nativeshare from "../components/Nativeshare"
 
 export const query = graphql`
   query BlogTemplate($id: String!) {
@@ -142,6 +143,8 @@ const BlogTemplate = props => {
           </div>
         </div>
       </section>
+
+      <Nativeshare />
     </Layout>
   )
 }
