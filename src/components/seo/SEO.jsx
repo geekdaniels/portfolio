@@ -48,7 +48,7 @@ const SEO = ({
 
   const schemaOrgWebPage = {
     "@context": "http://schema.org",
-    "@type": "WebPage",
+    "@type": "WebSite",
     url: siteUrl,
     headline,
     inLanguage: siteLanguage,
@@ -74,10 +74,10 @@ const SEO = ({
     },
     datePublished: "2020-01-18T10:30:00+01:00",
     dateModified: buildTime,
-    image: {
-      "@type": "ImageObject",
-      url: `${siteUrl}${defaultBanner}`,
-    },
+    // image: {
+    //   "@type": "ImageObject",
+    //   url: `${siteUrl}${defaultBanner}`,
+    // },
   }
 
   // Initial breadcrumb list
@@ -104,12 +104,12 @@ const SEO = ({
       inLanguage: siteLanguage,
       description: seo.description,
       name: seo.title,
-      image: {
-        "@type": "ImageObject",
-        url: `https:${seo.image}`,
-        width: 1130,
-        height: 484,
-      },
+      // image: {
+      //   "@type": "ImageObject",
+      //   url: `https:${seo.image}`,
+      //   width: 1130,
+      //   height: 484,
+      // },
       author: {
         "@type": "Person",
         name: author,
@@ -192,7 +192,7 @@ const SEO = ({
       <Twitter
         type="summary_large_image"
         title={seo.title}
-        image={`https:${seo.image}`}
+        image={article ? `https:${seo.image}` : seo.image}
         desc={seo.description}
         username={twitter}
       />
