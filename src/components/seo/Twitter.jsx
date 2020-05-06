@@ -10,6 +10,8 @@ const Twitter = ({ type, username, title, desc, image }) => (
     <meta name="twitter:description" content={desc} />
     <meta name="twitter:image" content={image} />
     <meta name="twitter:image:alt" content={desc} />
+
+    
   </Helmet>
 )
 

@@ -22,6 +22,8 @@ const Facebook = ({ url, name, type, title, desc, image, locale }) => (
     >
       <link itemprop="url" href={image} />
     </span>
+
+    
   </Helmet>
 )
 
