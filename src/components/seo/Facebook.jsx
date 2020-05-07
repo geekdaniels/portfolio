@@ -4,6 +4,7 @@ import Helmet from "react-helmet"
 
 const Facebook = ({ url, name, type, title, desc, image, locale }) => (
   <Helmet>
+    {/* Open Graph Metadata */}
     {name && <meta property="og:site_name" content={name} />}
     <meta property="og:locale" content={locale} />
     <meta property="og:url" content={url} />
@@ -22,8 +23,6 @@ const Facebook = ({ url, name, type, title, desc, image, locale }) => (
     >
       <link itemprop="url" href={image} />
     </span>
-
-    
   </Helmet>
 )
 

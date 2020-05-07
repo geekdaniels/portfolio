@@ -26,6 +26,7 @@ const SEO = ({
       defaultTitle,
       defaultDescription,
       defaultBanner,
+      brandlogo,
       headline,
       siteLanguage,
       ogLanguage,
@@ -40,6 +41,7 @@ const SEO = ({
     description: desc || defaultDescription,
     image: banner || `${siteUrl}${defaultBanner}`,
     url: `${siteUrl}${pathname || ""}`,
+    brandlogo: `${siteUrl}${brandlogo}`,
   }
 
   // schema.org in JSONLD format
@@ -98,19 +100,17 @@ const SEO = ({
   if (article) {
     schemaArticle = {
       "@context": "http://schema.org",
-      "@type": "WebSite",
+      "@type": "NewsArticle",
       url: seo.url,
+      mainEntityOfPage: seo.url,
       headline: seo.title,
       inLanguage: siteLanguage,
       description: seo.description,
       name: seo.title,
-      // image: {
-      //   "@type": "ImageObject",
-      //   url: `https:${seo.image}`,
-      // },
-      "image": [
-        `https:${seo.image}`
-      ],    
+      image: {
+        "@type": "ImageObject",
+        url: `https:${seo.image}`,
+      },
       author: {
         "@type": "Person",
         name: author,
@@ -126,8 +126,14 @@ const SEO = ({
       },
       datePublished: publication_date,
       dateModified: modification_date,
-
-      "@id": `${seo.url}/#webpage`,
+      publisher: {
+        "@type": "Person",
+        name: "Olufemi Oladotun",
+        logo: {
+          "@type": "ImageObject",
+          url: `${seo.brandlogo}`,
+        },
+      },
     }
 
     // Push current blogpost into breadcrumb list
@@ -159,7 +165,10 @@ const SEO = ({
           content="Olufemi oladotun Daniel, web optimzation specialist, Olufemi oladotun, Olufemi Daniel, UI Design, web design lagos, UX design lagos,  UX Designer Nigeria, front-end developer, front-end designer, web designer, User Experience, UX designer, User Interface, UI designer, Mobile app Design, web design Nigeria, web design lagos, Nigeria web designer, website design nigeria, e-commerce website, website development in Nigeria"
         />
 
-        <meta name="image" content={article ? `https:${seo.image}` : seo.image} />
+        <meta
+          name="image"
+          content={article ? `https:${seo.image}` : seo.image}
+        />
 
         {/* Insert schema.org data conditionally (webpage/article) + everytime (breadcrumbs) */}
         {!article && (
@@ -175,13 +184,6 @@ const SEO = ({
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       </Helmet>
 
-      {article && (
-        <Article
-          publication_date={publication_date}
-          modification_date={modification_date}
-        />
-      )}
-
       <Facebook
         desc={seo.description}
         image={seo.image}
@@ -192,8 +194,16 @@ const SEO = ({
         name={facebook}
       />
 
+      {article && (
+        <Article
+          publication_date={publication_date}
+          modification_date={modification_date}
+        />
+      )}
+
       <Twitter
         type="summary_large_image"
+        url={article ? seo.url : siteUrl}
         title={seo.title}
         image={article ? `https:${seo.image}` : seo.image}
         desc={seo.description}

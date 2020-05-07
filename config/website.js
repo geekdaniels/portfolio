@@ -7,6 +7,7 @@ module.exports = {
     url: 'https://www.olufemioladotun.com', // Domain of your site. No trailing slash!
     siteLanguage: 'en', // Language Tag on <html> element
     logo: '/seo_image.png', // Used for SEO
+    brandlogo: '/logo.png', // Used for SEO
     ogLanguage: 'en_US', // Facebook Language
   
     // JSONLD / Manifest
