@@ -76,10 +76,10 @@ const SEO = ({
     },
     datePublished: "2020-01-18T10:30:00+01:00",
     dateModified: buildTime,
-    // image: {
-    //   "@type": "ImageObject",
-    //   url: `${siteUrl}${defaultBanner}`,
-    // },
+    image: {
+      "@type": "ImageObject",
+      url: `${siteUrl}${defaultBanner}`,
+    },
   }
 
   // Initial breadcrumb list
