@@ -23,8 +23,8 @@ export const query = graphql`
           html
         }
       }
-      createdAt(formatString: "MMMM Do, YYYY")
-      updatedAt(fromNow: true)
+      createdAt
+      updatedAt
       seoTitle
       seoDescription
       seoKeywords
@@ -70,7 +70,7 @@ const BlogTemplate = props => {
             <div className="row">
               <div className="col-lg-9 offset-lg-1 col-12">
                 <div className="iha-all-meta">
-                  <div className="iha-meta-box">
+                  {/* <div className="iha-meta-box">
                     <p className="title">PUBLISH DATE</p>
                     <p className="info">
                       {props.data.contentfulBlog.createdAt}
@@ -81,7 +81,7 @@ const BlogTemplate = props => {
                     <p className="info">
                       {props.data.contentfulBlog.updatedAt}
                     </p>
-                  </div>
+                  </div> */}
                   <div className="iha-meta-box">
                     <p className="title">READ TIME</p>
                     <p className="info">
