@@ -107,9 +107,10 @@ const SEO = ({
       // image: {
       //   "@type": "ImageObject",
       //   url: `https:${seo.image}`,
-      //   width: 1130,
-      //   height: 484,
       // },
+      "image": [
+        `https:${seo.image}`
+      ],    
       author: {
         "@type": "Person",
         name: author,
