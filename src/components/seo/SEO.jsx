@@ -209,6 +209,8 @@ const SEO = ({
         desc={seo.description}
         username={twitter}
       />
+
+      <meta name="p:domain_verify" content="a26a928a1b1e1ca3649609a4c84d2973"/>
     </>
   )
 }
