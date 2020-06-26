@@ -186,7 +186,7 @@ const SEO = ({
 
       <Facebook
         desc={seo.description}
-        image={seo.image}
+        image={`https:${seo.image}`}
         title={seo.title}
         type={article ? "article" : "website"}
         url={seo.url}
@@ -210,7 +210,7 @@ const SEO = ({
         username={twitter}
       />
 
-      <meta name="p:domain_verify" content="a26a928a1b1e1ca3649609a4c84d2973"/>
+      <meta name="p:domain_verify" content="a26a928a1b1e1ca3649609a4c84d2973" />
     </>
   )
 }

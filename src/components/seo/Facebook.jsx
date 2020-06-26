@@ -15,7 +15,7 @@ const Facebook = ({ url, name, type, title, desc, image, locale }) => (
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={desc} />
-    <link itemprop="thumbnailUrl" href={image} />
+    <link itemprop="thumbnailUrl" href={image}  />
     <span
       itemprop="thumbnail"
       itemscope

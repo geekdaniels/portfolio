@@ -90,20 +90,20 @@ class Header extends React.Component {
                 </li>
 
                 <li>
-                  <Link to="/services" activeClassName="active">
+                  <Link to="/services/" activeClassName="active">
                     Services
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/about" activeClassName="active">
+                  <Link to="/about/" activeClassName="active">
                     About
                   </Link>
                 </li>
 
                 <li className="">
                   <Link
-                    to="/blog"
+                    to="/blog/"
                     activeClassName="active"
                     title="Read blog posts by olufemi oladotun Daniel"
                   >
@@ -112,7 +112,7 @@ class Header extends React.Component {
                 </li>
 
                 <li className="d-none">
-                  <Link to="/faq" activeClassName="active">
+                  <Link to="/faq/" activeClassName="active">
                     FAQs
                   </Link>
                 </li>
@@ -122,7 +122,7 @@ class Header extends React.Component {
                 <li className="">
                   <div className="lets-chat">
                     <Link
-                      to="/contact"
+                      to="/contact/"
                       className="link btn-style-1"
                       title="Contact and get in touch with me"
                     >
@@ -180,20 +180,20 @@ class Header extends React.Component {
                   </li>
 
                   <li>
-                    <Link to="/services" activeClassName="active">
+                    <Link to="/services/" activeClassName="active">
                       Services
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="/about" activeClassName="active">
+                    <Link to="/about/" activeClassName="active">
                       About
                     </Link>
                   </li>
 
                   <li className="">
                     <Link
-                      to="/blog"
+                      to="/blog/"
                       activeClassName="active"
                       title="Read blog posts by olufemi oladotun Daniel"
                     >
@@ -202,7 +202,7 @@ class Header extends React.Component {
                   </li>
 
                   <li className="d-none">
-                    <Link to="/faq" activeClassName="active">
+                    <Link to="/faq/" activeClassName="active">
                       FAQs
                     </Link>
                   </li>
@@ -212,7 +212,7 @@ class Header extends React.Component {
             <div className="col-lg-2 col-sm-4 col-12 d-none d-sm-block">
               <div className="lets-chat">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="link btn-style-1"
                   title="Contact and get in touch with me"
                 >

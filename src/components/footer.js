@@ -32,7 +32,7 @@ const Footer = () => (
             <div className="col-lg-4 col-sm-4 col-12">
               <div className="f-chat">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="link btn-style-1"
                   title="Contact and get in touch with me"
                 >
@@ -58,22 +58,22 @@ const Footer = () => (
                 <a href="#">CLIENTS</a>
               </li> */}
               <li>
-                <Link to="/services" activeClassName="active">
+                <Link to="/services/" activeClassName="active">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/about" activeClassName="active">
+                <Link to="/about/" activeClassName="active">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/blog" activeClassName="active">
+                <Link to="/blog/" activeClassName="active">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/privacy-policy" activeClassName="active">
+                <Link to="/privacy-policy/" activeClassName="active">
                   Privacy Policy
                 </Link>
               </li>
