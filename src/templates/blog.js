@@ -63,7 +63,7 @@ const BlogTemplate = props => {
 
       <section
         className="innerpage-hero-area"
-        style={{ "margin-top": "140px" }}
+        style={{ "marginTop": "140px" }}
       >
         <div className="iha-meta">
           <div className="container">
@@ -98,6 +98,7 @@ const BlogTemplate = props => {
                       href={`https://www.facebook.com/sharer/sharer.php?u=https://www.olufemioladotun.com/blog/${props.data.contentfulBlog.slug}`}
                       className="info"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Facebook
                     </a>
@@ -125,7 +126,7 @@ const BlogTemplate = props => {
           <div className="row">
             <div className="col-lg-10 offset-lg-1 col-12">
               <div className="sbpa-content">
-                <div class="img">
+                <div className="img">
                   <Img
                     fluid={props.data.contentfulBlog.featuredImage.fluid}
                     alt={props.data.contentfulBlog.title}

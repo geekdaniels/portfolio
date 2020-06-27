@@ -18,7 +18,7 @@ export default class Nativeshare extends Component {
     return (
       <div className="native_share_wrapper d-lg-none">
         <button
-          class="w-actions__fab w-actions__fab--share gc-analytics-event"
+          className="w-actions__fab w-actions__fab--share gc-analytics-event"
           data-category="web.dev"
           onClick={() => this.onWebShare()}
         >
