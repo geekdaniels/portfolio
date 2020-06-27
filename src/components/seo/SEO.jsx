@@ -165,11 +165,6 @@ const SEO = ({
           content="Olufemi oladotun Daniel, web optimzation specialist, Olufemi oladotun, Olufemi Daniel, UI Design, web design lagos, UX design lagos,  UX Designer Nigeria, front-end developer, front-end designer, web designer, User Experience, UX designer, User Interface, UI designer, Mobile app Design, web design Nigeria, web design lagos, Nigeria web designer, website design nigeria, e-commerce website, website development in Nigeria"
         />
 
-        <meta
-          name="image"
-          content={article ? `https:${seo.image}` : seo.image}
-        />
-
         {/* Insert schema.org data conditionally (webpage/article) + everytime (breadcrumbs) */}
         {!article && (
           <script type="application/ld+json">
@@ -186,7 +181,7 @@ const SEO = ({
 
       <Facebook
         desc={seo.description}
-        image={`https:${seo.image}`}
+        image={article ? `https:${seo.image}` : seo.image}
         title={seo.title}
         type={article ? "article" : "website"}
         url={seo.url}
