@@ -4,6 +4,7 @@
         url('HKGrotesk-LegacyItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
         url('HKGrotesk-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
         url('HKGrotesk-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
         url('HKGrotesk-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -36,6 +40,7 @@
         url('HKGrotesk-BoldLegacy.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +49,7 @@
         url('HKGrotesk-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -52,6 +58,7 @@
         url('HKGrotesk-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -60,6 +67,7 @@
         url('HKGrotesk-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -68,6 +76,7 @@
         url('HKGrotesk-SemiBoldLegacy.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -76,6 +85,7 @@
         url('HKGrotesk-LightLegacy.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -84,6 +94,7 @@
         url('HKGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -92,6 +103,7 @@
         url('HKGrotesk-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -100,6 +112,7 @@
         url('HKGrotesk-BoldLegacyItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -108,6 +121,7 @@
         url('HKGrotesk-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -116,6 +130,7 @@
         url('HKGrotesk-MediumLegacy.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -124,6 +139,7 @@
         url('HKGrotesk-LightLegacyItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -132,6 +148,7 @@
         url('HKGrotesk-SemiBoldLegacyItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -140,6 +157,7 @@
         url('HKGrotesk-MediumLegacyItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -148,6 +166,7 @@
         url('HKGrotesk-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -156,5 +175,5 @@
         url('HKGrotesk-RegularLegacy.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
-

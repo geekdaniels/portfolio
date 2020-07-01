@@ -11,10 +11,20 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="google-site-verification" content="aTU4Un-jjdG4jQadkzUCB9E1JOU05d6GIKURDL9mvHQ" />
-        
-        <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"/>
-        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"/>
+        <meta
+          name="google-site-verification"
+          content="aTU4Un-jjdG4jQadkzUCB9E1JOU05d6GIKURDL9mvHQ"
+        />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap"
+          rel="stylesheet"
+        ></link>
+        <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" />
+        <script
+          defer
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        />
 
         {props.headComponents}
       </head>
