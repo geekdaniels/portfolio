@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 
 import Layout from "../components/layout"
@@ -16,9 +16,6 @@ import Element_2 from "../images/home1/hero-element-2.png"
 import Element_3 from "../images/home1/hero-element-3.png"
 import Element_4 from "../images/home1/hero-element-4.png"
 
-import profile_webp from "../images/olufemi-oladotun-daniel.webp"
-import profile_fallback from "../images/olufemi-oladotun-daniel.png"
-
 const IndexPage = () => {
   return (
     <Layout>
@@ -27,7 +24,7 @@ const IndexPage = () => {
         desc="I am Olufemi Oladotun Daniel, a Web designer & Web developer experienced in developing super fast websites that generate leads and bring sales."
       />
 
-      {/* <StaticQuery
+      <StaticQuery
         query={graphql`
           {
             profile_img: file(
@@ -43,88 +40,67 @@ const IndexPage = () => {
           }
         `}
         render={data => (
-             )}
-      /> */}
-
-      <section className="hero-area">
-        <div className="hero-element-1">
-          <img
-            src={Element_1}
-            alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
-            loading="lazy"
-          />
-        </div>
-        <div className="hero-element-2">
-          <img
-            src={Element_2}
-            alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
-            loading="lazy"
-          />
-        </div>
-        <div className="hero-element-3">
-          <img
-            src={Element_3}
-            alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
-            loading="lazy"
-          />
-        </div>
-        <div className="hero-element-4">
-          <img
-            src={Element_4}
-            alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
-            loading="lazy"
-          />
-        </div>
-
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-7 col-12">
-              <div className="hero-content text-left">
-                <h1 className="title mt-5">
-                  Giving you Super fast websites that bring sales and gain
-                  customers.
-                </h1>
-                <h4 className="sub_title mt-lg-2 mb-2 text-white">
-                  to scale up your business
-                </h4>
-
-                <Link to="/services/" className="link btn-style-1 mt-5">
-                  View Services
-                </Link>
-              </div>
+          <section className="hero-area">
+            <div className="hero-element-1">
+              <img
+                src={Element_1}
+                alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
+                loading="lazy"
+              />
+            </div>
+            <div className="hero-element-2">
+              <img
+                src={Element_2}
+                alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
+                loading="lazy"
+              />
+            </div>
+            <div className="hero-element-3">
+              <img
+                src={Element_3}
+                alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
+                loading="lazy"
+              />
+            </div>
+            <div className="hero-element-4">
+              <img
+                src={Element_4}
+                alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
+                loading="lazy"
+              />
             </div>
 
-            <div className="col-lg-5 col-12">
-              <div className="hero-content text-center">
-                {/* <Img
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-7 col-12">
+                  <div className="hero-content text-left">
+                    <h1 className="title mt-5">
+                      Giving you Super fast websites that bring sales and gain
+                      customers.
+                    </h1>
+                    <h4 className="sub_title mt-lg-2 mb-2 text-white">
+                      to scale up your business
+                    </h4>
+
+                    <Link to="/services/" className="link btn-style-1 mt-5">
+                      View Services
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="col-lg-5 col-12">
+                  <div className="hero-content text-center">
+                    <Img
                       fluid={data.profile_img.childImageSharp.fluid}
                       alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
-                    /> */}
-
-                <picture>
-                  <source
-                    srcset={profile_webp}
-                    type="image/webp"
-                    alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
-                    loading="lazy"
-                  />
-                  <source
-                    srcset={profile_fallback}
-                    type="image/png"
-                    alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
-                    loading="lazy"
-                  />
-                  <img
-                    src={profile_fallback}
-                    alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
-                    loading="lazy"
-                  />
-                </picture>
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        )}
+      />
 
       <Testimonial />
       <ServiceArea />
