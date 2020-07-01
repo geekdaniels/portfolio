@@ -42,7 +42,7 @@ class Header extends React.Component {
                   {
                     logo: file(relativePath: { eq: "logo.png" }) {
                       childImageSharp {
-                        fluid(maxWidth: 1600) {
+                        fluid(maxWidth: 200) {
                           src
                           ...GatsbyImageSharpFluid
                         }

@@ -28,12 +28,11 @@ const IndexPage = () => {
         query={graphql`
           {
             profile_img: file(
-              relativePath: { eq: "olufemi-oladotun-daniel.webp" }
+              relativePath: { eq: "olufemi-oladotun-daniel.png" }
             ) {
               childImageSharp {
-                fluid(maxWidth: 1600) {
-                  # ...GatsbyImageSharpFluid
-                  ...GatsbyImageSharpFluid_withWebp
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -93,6 +92,7 @@ const IndexPage = () => {
                     <Img
                       fluid={data.profile_img.childImageSharp.fluid}
                       alt="Welcome I am olufemi oladotun Daniel, Web optimization specialist"
+                      className="d-none d-lg-block"
                     />
                   </div>
                 </div>
