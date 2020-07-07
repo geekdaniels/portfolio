@@ -39,6 +39,7 @@
 /*----------------------------------------*/
 /*google-font*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 /*----------------------------------------*/
 /*  Other Files
@@ -220,7 +221,7 @@ Table Of Contents
 --------------------------
 */
 body {
-  font-family: "HK Grotesk Legacy";
+  font-family: 'Comfortaa', cursive;
 }
 
 h1,
@@ -281,7 +282,7 @@ h6 {
 }
 
 p {
-  font-family: "HK Grotesk Legacy";
+  font-family: 'Comfortaa', cursive;
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
@@ -295,7 +296,7 @@ p img {
 }
 
 span {
-  font-family: "HK Grotesk Legacy";
+  font-family: 'Comfortaa', cursive;
 }
 
 /* em and strong */
@@ -316,7 +317,7 @@ small {
 /*  blockquotes */
 blockquote {
   border-left: 0 none;
-  font-family: "HK Grotesk Legacy";
+  font-family: 'Comfortaa', cursive;
   margin: 10px 0;
   padding-left: 40px;
   position: relative;
@@ -377,7 +378,7 @@ abbr:hover {
 a,
 a:visited {
   text-decoration: none;
-  font-family: "HK Grotesk Legacy";
+  font-family: 'Comfortaa', cursive;
   font-weight: normal;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
@@ -746,7 +747,7 @@ header {
 }
 
 .hero-content .intro {
-  font-family: "HK Grotesk Legacy";
+  font-family: 'Comfortaa', cursive;
   color: #FFC576;
   font-size: 40px;
   line-height: 42px;
@@ -766,7 +767,7 @@ header {
 }
 
 .hero-content .desg {
-  font-family: "HK Grotesk Legacy";
+  font-family: 'Comfortaa', cursive;
   font-size: 30px;
   line-height: 32px;
   font-weight: 500;
@@ -1749,7 +1750,7 @@ footer {
 }
 
 .current-opinion article .comment-details .comment-meta .comment-left-meta .author-name {
-  font-family: "HK Grotesk Legacy";
+  font-family: 'Comfortaa', cursive;
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;

@@ -11,10 +11,10 @@ import ServiceArea from "../components/landingpage/servicearea"
 import Testimonial from "../components/landingpage/testimonialarea"
 import FeaturedBlog from "../components/featured"
 
-import Element_1 from "../images/home1/hero-element-1.png"
-import Element_2 from "../images/home1/hero-element-2.png"
-import Element_3 from "../images/home1/hero-element-3.png"
-import Element_4 from "../images/home1/hero-element-4.png"
+// import Element_1 from "../images/home1/hero-element-1.png"
+// import Element_2 from "../images/home1/hero-element-2.png"
+// import Element_3 from "../images/home1/hero-element-3.png"
+// import Element_4 from "../images/home1/hero-element-4.png"
 
 const IndexPage = () => {
   return (
@@ -42,28 +42,28 @@ const IndexPage = () => {
           <section className="hero-area">
             <div className="hero-element-1">
               <img
-                src={Element_1}
+                src="https://res.cloudinary.com/dnvo5klvx/image/upload/v1594157216/hero-element-1_c5umyd.png"
                 alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
                 loading="lazy"
               />
             </div>
             <div className="hero-element-2">
               <img
-                src={Element_2}
+                src="https://res.cloudinary.com/dnvo5klvx/image/upload/v1594157216/hero-element-2_erxuak.png"
                 alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
                 loading="lazy"
               />
             </div>
             <div className="hero-element-3">
               <img
-                src={Element_3}
+                src="https://res.cloudinary.com/dnvo5klvx/image/upload/v1594157216/hero-element-3_icn4k4.png"
                 alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
                 loading="lazy"
               />
             </div>
             <div className="hero-element-4">
               <img
-                src={Element_4}
+                src="https://res.cloudinary.com/dnvo5klvx/image/upload/v1594157217/hero-element-4_wzp0gs.png"
                 alt="Welcome to olufemi oladotun Daniel's website, a Web optimization specialist"
                 loading="lazy"
               />

@@ -47,8 +47,8 @@ class Testimonial extends Component {
                 nav
                 items={2}
                 navText={[
-                  "<i class='fal fa-long-arrow-left'></i>",
-                  "<i class='fal fa-long-arrow-right'></i>",
+                  "<i class='fas fa-long-arrow-left'></i>",
+                  "<i class='fas fa-long-arrow-right'></i>",
                 ]}
                 responsive={this.state.responsive}
               >

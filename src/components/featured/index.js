@@ -75,7 +75,7 @@ const FeaturedBlog = () => {
                   <h4 className="title">
                     <Link
                       to={`/blog/${edge.node.slug}`}
-                      class="link text-center"
+                      className="link text-center"
                     >
                       {edge.node.title}
                     </Link>

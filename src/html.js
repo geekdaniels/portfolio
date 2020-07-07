@@ -15,12 +15,24 @@ export default function HTML(props) {
           name="google-site-verification"
           content="aTU4Un-jjdG4jQadkzUCB9E1JOU05d6GIKURDL9mvHQ"
         />
-       
+
         <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" />
         <script
           defer
           src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         />
+
+        <script
+          defer
+          src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"
+          integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+          crossorigin="anonymous"
+        ></script>
+
+        <script
+          defer
+          src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        ></script>
 
         {props.headComponents}
       </head>

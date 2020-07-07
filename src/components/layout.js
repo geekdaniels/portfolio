@@ -9,12 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import "../style/bootstrap.min.css"
-// import "../style/jquery-ui.css"
-import "../style/all.min.css"
 import "../style/animate.css"
 import "../style/stellarnav.min.css"
 import "../style/magnific-popup.css"
-import "../fonts/stylesheet.css"
 import "../style/style.css"
 import "../style/responsive.css"
 
