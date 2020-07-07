@@ -24,13 +24,6 @@ export default function HTML(props) {
 
         <script
           defer
-          src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"
-          integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
-          crossorigin="anonymous"
-        ></script>
-
-        <script
-          defer
           src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
         ></script>
 
