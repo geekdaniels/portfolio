@@ -64,8 +64,8 @@ const ExperienceArea = () => (
 								</div>
 								<div className="right">
 									<h4 className="name">User Experience Design</h4>
-									<p className="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do
-										eiusmod tempor incididunt ut labore.</p>
+									{/* <p className="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do
+										eiusmod tempor incididunt ut labore.</p> */}
 								</div>
 							</div>
 							<div className="box wow fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -75,8 +75,8 @@ const ExperienceArea = () => (
 								</div>
 								<div className="right">
 									<h4 className="name">Graphic Design</h4>
-									<p className="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do
-										eiusmod tempor incididunt ut labore.</p>
+									{/* <p className="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do
+										eiusmod tempor incididunt ut labore.</p> */}
 								</div>
 							</div>
 							<div className="box wow fadeIn" data-wow-delay="400ms" data-wow-duration="1500ms">
@@ -86,8 +86,8 @@ const ExperienceArea = () => (
 								</div>
 								<div className="right">
 									<h4 className="name">Adobe Illustrator</h4>
-									<p className="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do
-										eiusmod tempor incididunt ut labore.</p>
+									{/* <p className="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do
+										eiusmod tempor incididunt ut labore.</p> */}
 								</div>
 							</div>
 							<div className="box wow fadeIn" data-wow-delay="600ms" data-wow-duration="1500ms">
@@ -97,8 +97,8 @@ const ExperienceArea = () => (
 								</div>
 								<div className="right">
 									<h4 className="name">B.sc Computer Science</h4>
-									<p className="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do
-										eiusmod tempor incididunt ut labore.</p>
+									{/* <p className="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do
+										eiusmod tempor incididunt ut labore.</p> */}
 								</div>
 							</div>
 						</div>
